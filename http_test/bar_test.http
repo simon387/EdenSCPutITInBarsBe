@@ -1,0 +1,7 @@
+POST {{baseUrl}}bar
+Content-Type: application/json
+Accept: application/json
+
+{
+
+}
