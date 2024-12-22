@@ -1,6 +1,7 @@
 package it.simonecelia.edenSCputitinbarsBE.controller;
 
 import io.quarkus.logging.Log;
+import it.simonecelia.edenSCputitinbarsBE.dto.ReportDTO;
 import it.simonecelia.edenSCputitinbarsBE.service.BarService;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.POST;
@@ -18,9 +19,9 @@ public class BarController {
 
 	@POST
 	@Produces ( MediaType.APPLICATION_JSON )
-	public Response newBar () {
+	public Response newBar ( ReportDTO report ) {
 		Log.info ( "Calling newBar" );
-		barService.newBar ();
+		barService.newBar ( report );
 		return Response.status ( Response.Status.CREATED ).build ();
 	}
 }

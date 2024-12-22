@@ -2,6 +2,11 @@ POST {{baseUrl}}bar
 Content-Type: application/json
 Accept: application/json
 
-{
-
-}
+< .payload.json
+#
+#{
+#  "realm": null,
+#  "text": {{file:long_text.txt}}",
+#  "path": "",
+#  "character": ""
+#}
