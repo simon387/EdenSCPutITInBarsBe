@@ -136,8 +136,10 @@ public class BarService {
 		var iniFile = new File ( barPath + character + "-41.ini" );
 		var ini = new Wini ( iniFile );
 
-		ini.put("Quickbar3", "Hotkey_0", "45,1300404,imperfect Vapor Essence Jewel (Dexterity Stat),156");
-
+		for ( int i = 0; i < gems.size (); i++ ) {
+			ini.put ( "Quickbar3", "Hotkey_" + i, "45," + gems.get ( i ).getId () + ",kek,0" );
+		}
+		Log.infof ( "Writing Gems to: %s", iniFile );
 		ini.store ();
 	}
 }
