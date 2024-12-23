@@ -4,7 +4,11 @@ import io.quarkus.logging.Log;
 import it.simonecelia.edenSCputitinbarsBE.enumeration.Realm;
 import it.simonecelia.edenSCputitinbarsBE.model.Gem;
 import jakarta.enterprise.context.ApplicationScoped;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
+import org.ini4j.Wini;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -64,11 +68,15 @@ public class BarService {
 
 	String[] arrBloodEssence = { "Blood Essence Jewel" };
 
-	public void newBar ( Realm realm, String character, int gemsNumber, String payload ) {
+	@ConfigProperty ( name = "bar.path" )
+	String barPath;
+
+	public void newBar ( Realm realm, String character, int gemsNumber, String payload ) throws IOException {
 		var gems = getGems ( realm, gemsNumber, payload );
 		if ( gems.isEmpty () ) {
 			throw new RuntimeException ( "Gems not found!" );
 		}
+		putGems ( gems, character );
 	}
 
 	private List<Gem> getGems ( Realm realm, int gemsNumber, String payload ) {
@@ -122,5 +130,14 @@ public class BarService {
 		var pattern = Pattern.compile ( regex, Pattern.CASE_INSENSITIVE );
 		var matcher = pattern.matcher ( line );
 		return matcher.find ();
+	}
+
+	private void putGems ( List<Gem> gems, String character ) throws IOException {
+		var iniFile = new File ( barPath + character + "-41.ini" );
+		var ini = new Wini ( iniFile );
+
+		ini.put("Quickbar3", "Hotkey_0", "45,1300404,imperfect Vapor Essence Jewel (Dexterity Stat),156");
+
+		ini.store ();
 	}
 }
