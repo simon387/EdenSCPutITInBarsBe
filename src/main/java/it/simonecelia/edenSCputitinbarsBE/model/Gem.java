@@ -1,6 +1,7 @@
 package it.simonecelia.edenSCputitinbarsBE.model;
 
 import it.simonecelia.edenSCputitinbarsBE.enumeration.Realm;
+import it.simonecelia.edenSCputitinbarsBE.util.GemUtil;
 
 
 @SuppressWarnings ( "unused" )
@@ -12,10 +13,13 @@ public class Gem {
 
 	private String name;
 
+	private int id;
+
 	public Gem ( Realm realm, String strength, String name ) {
 		this.realm = realm;
 		this.strength = strength;
 		this.name = name;
+		this.id = GemUtil.getId ( strength, name );
 	}
 
 	public Realm getRealm () {
@@ -40,5 +44,13 @@ public class Gem {
 
 	public void setName ( String name ) {
 		this.name = name;
+	}
+
+	public int getId () {
+		return id;
+	}
+
+	public void setId ( int id ) {
+		this.id = id;
 	}
 }
