@@ -27,7 +27,7 @@ public class BarController {
 					@QueryParam ( "character" ) String character,
 					@QueryParam ( "gems" ) Integer gems,
 					String payload ) {
-		Log.info ( "Calling newBar" );
+		Log.infof ( "Calling newBar, realm = %s, character = %s, gems = %d", realm, character, gems );
 		if ( gems < 1 ) {
 			Log.errorf ( "Gems must be a positive integer, you provided: %d", gems );
 			throw new IllegalArgumentException ( "Gems must be greater than 0" );

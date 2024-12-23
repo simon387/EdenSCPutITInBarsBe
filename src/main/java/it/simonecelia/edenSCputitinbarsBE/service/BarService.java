@@ -8,6 +8,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
+import java.util.stream.Stream;
 
 
 @ApplicationScoped
@@ -61,6 +62,8 @@ public class BarService {
 					"Raw", "Uncut", "Rough", "Flawed", "Imperfect", "Polished", "Faceted", "Precious", "Flawless", "Perfect"
 	};
 
+	String[] arrBloodEssence = { "Blood Essence Jewel" };
+
 	public void newBar ( Realm realm, String character, int gemsNumber, String payload ) {
 		var gems = getGems ( realm, gemsNumber, payload );
 		if ( gems.isEmpty () ) {
@@ -70,7 +73,7 @@ public class BarService {
 
 	private List<Gem> getGems ( Realm realm, int gemsNumber, String payload ) {
 		var lines = payload.split ( "\\r?\\n" );
-		int gemsFound = 0;
+		var gemsFound = 0;
 		var gems = new ArrayList<Gem> ();
 		for ( var line : lines ) {
 			for ( var gemStrength : arrGemStrength ) {
@@ -92,13 +95,26 @@ public class BarService {
 	}
 
 	private Gem getGem ( Realm realm, String line, String strength ) {
-		for ( var resist : arrResistName ) {
-			if ( find ( line, resist ) ) {
-				Log.infof ( "Line: \"%s\" contains word: \"%s\"", line, resist );
-				return new Gem ( realm, strength, resist );
+		var skills = arrSkillsAlbName;
+		var focuses = arrFocusAlbName;
+		focuses = switch ( realm ) {
+			case HIBERNIA -> {
+				skills = arrSkillsHibName;
+				yield arrFocusHibName;
+			}
+			case MIDGARD -> {
+				skills = arrSkillsMidName;
+				yield arrFocusMidName;
+			}
+			default -> focuses;
+		};
+		for ( var bonus : Stream.of ( skills, focuses, arrResistName, arrStatsName, arrBloodEssence ).flatMap ( Stream::of ).toArray ( String[]::new ) ) {
+			if ( find ( line, bonus ) ) {
+				Log.infof ( "Line: \"%s\" contains word: \"%s\"", line, bonus );
+				return new Gem ( realm, strength, bonus );
 			}
 		}
-		return null;
+		throw new RuntimeException ( "Gem not found! Line: " + line );
 	}
 
 	private boolean find ( String line, String word ) {
