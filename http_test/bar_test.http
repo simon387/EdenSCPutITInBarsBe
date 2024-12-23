@@ -1,12 +1,5 @@
-POST {{baseUrl}}bar
-Content-Type: application/json
+POST {{baseUrl}}bar?realm=MIDGARD&character=r4y
+Content-Type: text/plain
 Accept: application/json
 
-< .payload.json
-#
-#{
-#  "realm": null,
-#  "text": {{file:long_text.txt}}",
-#  "path": "",
-#  "character": ""
-#}
+< payload.txt
