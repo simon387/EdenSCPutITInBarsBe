@@ -22,9 +22,21 @@ public class BarController {
 	@POST
 	@Consumes ( MediaType.TEXT_PLAIN )
 	@Produces ( MediaType.APPLICATION_JSON )
-	public Response newBar ( @QueryParam ( "realm" ) Realm realm, @QueryParam ( "character" ) String character, String payload ) {
+	public Response newBar (
+					@QueryParam ( "realm" ) Realm realm,
+					@QueryParam ( "character" ) String character,
+					@QueryParam ( "gems" ) Integer gems,
+					String payload ) {
 		Log.info ( "Calling newBar" );
-		barService.newBar ( realm, character, payload );
+		if ( gems < 1 ) {
+			Log.errorf ( "Gems must be a positive integer, you provided: %d", gems );
+			throw new IllegalArgumentException ( "Gems must be greater than 0" );
+		}
+		if ( character.length () < 3 ) {
+			Log.errorf ( "Character must be at least 3 characters, you provided: %s", character );
+			throw new IllegalArgumentException ( "Character must be at least 3 characters" );
+		}
+		barService.newBar ( realm, character, gems, payload );
 		return Response.status ( Response.Status.CREATED ).build ();
 	}
 }

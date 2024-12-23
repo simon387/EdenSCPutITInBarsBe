@@ -1,4 +1,4 @@
-POST {{baseUrl}}bar?realm=MIDGARD&character=r4y
+POST {{baseUrl}}bar?realm=MIDGARD&character=r4y&gems=12
 Content-Type: text/plain
 Accept: application/json
 
