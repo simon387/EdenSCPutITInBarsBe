@@ -12,6 +12,8 @@ import jakarta.ws.rs.QueryParam;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
+import java.io.IOException;
+
 
 @Path ( "/bar" )
 public class BarController {
@@ -26,7 +28,7 @@ public class BarController {
 					@QueryParam ( "realm" ) Realm realm,
 					@QueryParam ( "character" ) String character,
 					@QueryParam ( "gems" ) Integer gems,
-					String payload ) {
+					String payload ) throws IOException {
 		Log.infof ( "Calling newBar, realm = %s, character = %s, gems = %d", realm, character, gems );
 		if ( gems < 1 ) {
 			Log.errorf ( "Gems must be a positive integer, you provided: %d", gems );
