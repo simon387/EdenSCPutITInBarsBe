@@ -9,8 +9,14 @@ public class GemUtil {
 	public static int getId ( Gem gem ) {
 		var baseId = getBaseIdHelper ( gem );
 		var name = gem.getName ().toLowerCase ();
-		if ( ( name.contains ( "blood essence jewel" ) || ( name.contains ( "mystical essence jewel" ) ) ) && gem.getRealm () == Realm.MIDGARD ) {
+		if ( gem.getRealm () == Realm.MIDGARD && ( name.contains ( "blood essence jewel" ) || ( name.contains ( "mystical essence jewel" ) ) ) ) {
 			baseId += 200;
+		}
+		if ( gem.getRealm () == Realm.ALBION && name.contains ( "blood essence jewel" ) ) {
+			baseId = 1309200;
+		}
+		if ( gem.getRealm () == Realm.ALBION && name.contains ( "mystical essence jewel" ) ) {
+			baseId = 1309400;
 		}
 		return baseId + gem.getStrength ().getLevel ();
 	}
@@ -40,11 +46,11 @@ public class GemUtil {
 			case "airy battle jewel" -> 1304000;
 			case "dusty battle jewel" -> 1304200;
 			case "heated battle jewel" -> 1304400;
-			case "watery war spell stone" -> 1304600;//errore
+			case "watery war spell stone" -> 1304600; //errore
 			case "fiery war spell stone" -> 1304800;
 			case "heated war spell stone" -> 1305200; // dupli
-			case "earthen war spell stone" -> 1305400;//error hib?
-			case "icy war spell stone" -> 1305400;//error hib? // triplicat
+			case "earthen war spell stone" -> 1305400; //tripli
+			case "icy war spell stone" -> 1305400; // triplicat
 			case "airy war spell stone" -> 1305800; //dupli
 			case "fiery nature spell stone" -> 1306000; //dupli
 			case "finesse war spell stone" -> 1306200; //dupli
@@ -79,8 +85,8 @@ public class GemUtil {
 			case "phantasmal arcane spell stone" -> 1312000;
 			case "ethereal arcane spell stone" -> 1312200;
 			case "brilliant spell stone" -> 1312400;
-			case "watery war rune" -> 1304600; //errore
-			case "fiery war rune" -> 1304800; // forse errore
+			case "watery war rune" -> 1304600; // dupli
+			case "fiery war rune" -> 1304800; // tripli
 			case "earthen war rune" -> 1305000;
 			case "heated war rune" -> 1305200; //dupli
 			case "airy war rune" -> 1305400; //dupli
@@ -107,7 +113,46 @@ public class GemUtil {
 			case "ashen primal rune" -> 1310000;
 			case "ashen rune" -> 1310200;
 			case "brilliant rune" -> 1310600;
-			//todo manca alb
+			case "watery war sigil" -> 1304600;
+			case "fiery war sigil" -> 1304800;
+			case "dusty war sigil" -> 1305000;
+			case "heated war sigil" -> 1305200;
+			case "earthen war sigil" -> 1305400;
+			case "airy war sigil" -> 1305600;
+			case "vapor war sigil" -> 1305800;
+			case "finesse war sigil" -> 1306000;
+			case "icy war sigil" -> 1306200;
+			case "finesse fervor sigil" -> 1306400;
+			case "fiery fervor sigil" -> 1306600;
+			case "airy fervor sigil" -> 1306800;
+			case "watery fervor sigil" -> 1307000;
+			case "earthen fervor sigil" -> 1307200;
+			case "vapor fervor sigil" -> 1307400;
+			case "earthen evocation sigil" -> 1307600;
+			case "icy evocation sigil" -> 1307800;
+			case "fiery evocation sigil" -> 1308000;
+			case "airy evocation sigil" -> 1308200;
+			case "heated evocation sigil" -> 1308400;
+			case "dusty evocation sigil" -> 1308600;
+			case "vapor evocation sigil" -> 1308800;
+			case "watery evocation sigil" -> 1309000;
+			case "earth sigil" -> 1309600;
+			case "ice sigil" -> 1309800;
+			case "fire sigil" -> 1310000;
+			case "air sigil" -> 1310200;
+			case "heat sigil" -> 1310400;
+			case "dust sigil" -> 1310600;
+			case "vapor sigil" -> 1310800;
+			case "water sigil" -> 1311000;
+			case "molten magma war sigil" -> 1311200;
+			case "vacuous fervor sigil" -> 1311400;
+			case "salt crusted fervor sigil" -> 1311600;
+			case "ashen fervor sigil" -> 1311800;
+			case "steaming fervor sigil" -> 1312000;
+			case "vacuous sigil" -> 1312200;
+			case "salt crusted sigil" -> 1312400;
+			case "ashen sigil" -> 1312600;
+			case "brilliant sigil" -> 1313000;
 			default -> 0;
 		};
 	}
