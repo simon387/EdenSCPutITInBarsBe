@@ -30,14 +30,6 @@ public class BarController {
 					@QueryParam ( "gems" ) Integer gems,
 					String payload ) throws IOException {
 		Log.infof ( "Calling newBar, realm = %s, character = %s, gems = %d", realm, character, gems );
-		if ( gems < 1 ) {
-			Log.errorf ( "Gems must be a positive integer, you provided: %d", gems );
-			throw new IllegalArgumentException ( "Gems must be greater than 0" );
-		}
-		if ( character.length () < 3 ) {
-			Log.errorf ( "Character must be at least 3 characters, you provided: %s", character );
-			throw new IllegalArgumentException ( "Character must be at least 3 characters" );
-		}
 		barService.newBar ( realm, character, gems, payload );
 		return Response.status ( Response.Status.CREATED ).build ();
 	}

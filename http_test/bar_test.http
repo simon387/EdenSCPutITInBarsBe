@@ -1,4 +1,4 @@
-POST {{baseUrl}}bar?realm=HIBERNIA&character=Geasy&gems=12
+POST {{baseUrl}}bar?realm=HIBERNIA&gems=12
 Content-Type: text/plain
 Accept: application/json
 

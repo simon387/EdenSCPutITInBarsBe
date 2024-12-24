@@ -25,12 +25,13 @@ import static it.simonecelia.edenSCputitinbarsBE.model.GemData.arrStatsName;
 @ApplicationScoped
 public class GemService {
 
-	public List<Gem> getGems ( Realm realm, int gemsNumber, String payload ) {
+	public List<Gem> getGems ( Realm realm, Integer gemsNumber, String payload ) {
+		var ignoreGemsNumber = gemsNumber == null || gemsNumber <= 0;
 		var lines = payload.split ( "\\r?\\n" );
 		var gemsFound = 0;
 		var gems = new ArrayList<Gem> ();
 		for ( var line : lines ) {
-			for ( var gemStrength : GemStrength.getArray() ) {
+			for ( var gemStrength : GemStrength.getArray () ) {
 				if ( find ( line, gemStrength ) ) {
 					gemsFound++;
 					Log.infof ( "Line: \"%s\" contains word: \"%s\"", line, gemStrength );
@@ -38,11 +39,11 @@ public class GemService {
 					break;
 				}
 			}
-			if ( gemsFound == gemsNumber ) {
+			if ( !ignoreGemsNumber && ( gemsFound == gemsNumber ) ) {
 				break;
 			}
 		}
-		if ( gemsFound != gemsNumber ) {
+		if ( !ignoreGemsNumber && ( gemsFound != gemsNumber ) ) {
 			throw new RuntimeException ( "Gems number provided does not match!" );
 		}
 		return gems;
