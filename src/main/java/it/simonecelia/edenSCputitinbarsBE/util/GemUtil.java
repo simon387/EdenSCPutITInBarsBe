@@ -40,14 +40,14 @@ public class GemUtil {
 			case "airy battle jewel" -> 1304000;
 			case "dusty battle jewel" -> 1304200;
 			case "heated battle jewel" -> 1304400;
-			case "watery war spell stone" -> 1304600;
+			case "watery war spell stone" -> 1304600;//errore
 			case "fiery war spell stone" -> 1304800;
-			case "heated war spell stone" -> 1305200;
+			case "heated war spell stone" -> 1305200; // dupli
 			case "earthen war spell stone" -> 1305400;//error hib?
-			case "icy war spell stone" -> 1305400;//error hib?
-			case "airy war spell stone" -> 1305800;
-			case "fiery nature spell stone" -> 1306000;
-			case "finesse war spell stone" -> 1306200;
+			case "icy war spell stone" -> 1305400;//error hib? // triplicat
+			case "airy war spell stone" -> 1305800; //dupli
+			case "fiery nature spell stone" -> 1306000; //dupli
+			case "finesse war spell stone" -> 1306200; //dupli
 			case "watery nature spell stone" -> 1306400;
 			case "finesse nature spell stone" -> 1306600;
 			case "earthen nature spell stone" -> 1306800;
@@ -79,15 +79,15 @@ public class GemUtil {
 			case "phantasmal arcane spell stone" -> 1312000;
 			case "ethereal arcane spell stone" -> 1312200;
 			case "brilliant spell stone" -> 1312400;
-			case "watery war rune" -> 1304600;
-			case "fiery war rune" -> 1304800;
+			case "watery war rune" -> 1304600; //errore
+			case "fiery war rune" -> 1304800; // forse errore
 			case "earthen war rune" -> 1305000;
-			case "heated war rune" -> 1305200;
-			case "airy war rune" -> 1305400;
+			case "heated war rune" -> 1305200; //dupli
+			case "airy war rune" -> 1305400; //dupli
 			case "vapor war rune" -> 1305600;
-			case "icy war rune" -> 1305800;
-			case "finesse war rune" -> 1306000;
-			case "earthen primal rune" -> 1306200;
+			case "icy war rune" -> 1305800; //dupli
+			case "finesse war rune" -> 1306000; //dupli
+			case "earthen primal rune" -> 1306200; //dupli
 			case "finesse primal rune" -> 1306400;
 			case "airy primal rune" -> 1306600;
 			case "fiery primal rune" -> 1306800;
