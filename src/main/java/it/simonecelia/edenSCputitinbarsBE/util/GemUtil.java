@@ -1,20 +1,21 @@
 package it.simonecelia.edenSCputitinbarsBE.util;
 
 import it.simonecelia.edenSCputitinbarsBE.enumeration.Realm;
+import it.simonecelia.edenSCputitinbarsBE.model.Gem;
 
 
 public class GemUtil {
 
-	public static int getId ( String strength, String name, Realm realm ) {
-		var id = getId ( strength, name );
-		if ( name.equalsIgnoreCase ( "blood essence jewel" ) && realm == Realm.MIDGARD ) {
+	public static int getId ( Gem gem ) {
+		var id = getIdHelper ( gem );
+		if ( gem.getName ().equalsIgnoreCase ( "blood essence jewel" ) && gem.getRealm () == Realm.MIDGARD ) {
 			id += 200;
 		}
 		return id;
 	}
 
-	private static int getId ( String strength, String name ) {
-		return switch ( ( strength + " " + name ).toLowerCase () ) {
+	private static int getIdHelper ( Gem gem ) {
+		return switch ( ( gem.getStrength ().getStrengthLowerCase () + " " + gem.getName () ).toLowerCase () ) {
 			case "raw fiery essence jewel" -> 1300000;
 			case "uncut fiery essence jewel" -> 1300001;
 			case "rough fiery essence jewel" -> 1300002;
@@ -710,7 +711,6 @@ public class GemUtil {
 			case "precious airy primal rune" -> 1306607;
 			case "flawless airy primal rune" -> 1306608;
 			case "perfect airy primal rune" -> 1306609;
-
 
 			default -> 0;
 		};
