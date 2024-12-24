@@ -1,6 +1,7 @@
 package it.simonecelia.edenSCputitinbarsBE.service;
 
 import io.quarkus.logging.Log;
+import it.simonecelia.edenSCputitinbarsBE.enumeration.GemStrength;
 import it.simonecelia.edenSCputitinbarsBE.enumeration.Realm;
 import it.simonecelia.edenSCputitinbarsBE.model.Gem;
 import jakarta.enterprise.context.ApplicationScoped;
@@ -62,10 +63,6 @@ public class BarService {
 	private final String[] arrStatsName = { "fiery essence jewel", "vapor essence jewel", "airy essence jewel", "earthen essence jewel", "dusty essence jewel",
 					"watery essence jewel", "heated essence jewel", "icy essence jewel" };
 
-	private final String[] arrGemStrength = {
-					"Raw", "Uncut", "Rough", "Flawed", "Imperfect", "Polished", "Faceted", "Precious", "Flawless", "Perfect"
-	};
-
 	private final String[] arrBloodEssence = { "Blood Essence Jewel" };
 
 	@ConfigProperty ( name = "bar.path" )
@@ -84,7 +81,7 @@ public class BarService {
 		var gemsFound = 0;
 		var gems = new ArrayList<Gem> ();
 		for ( var line : lines ) {
-			for ( var gemStrength : arrGemStrength ) {
+			for ( var gemStrength : GemStrength.getArray() ) {
 				if ( find ( line, gemStrength ) ) {
 					gemsFound++;
 					Log.infof ( "Line: \"%s\" contains word: \"%s\"", line, gemStrength );
