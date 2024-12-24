@@ -28,10 +28,6 @@ public enum GemStrength {
 		return strength;
 	}
 
-	public String getStrengthLowerCase () {
-		return strength.toLowerCase ();
-	}
-
 	public int getLevel () {
 		return level;
 	}

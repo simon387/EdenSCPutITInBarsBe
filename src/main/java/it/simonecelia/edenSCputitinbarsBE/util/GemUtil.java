@@ -7,11 +7,12 @@ import it.simonecelia.edenSCputitinbarsBE.model.Gem;
 public class GemUtil {
 
 	public static int getId ( Gem gem ) {
-		var id = getBaseIdHelper ( gem );
-		if ( gem.getName ().equalsIgnoreCase ( "blood essence jewel" ) && gem.getRealm () == Realm.MIDGARD ) {
-			id += 200;
+		var baseId = getBaseIdHelper ( gem );
+		var name = gem.getName ().toLowerCase ();
+		if ( ( name.contains ( "blood essence jewel" ) || ( name.contains ( "mystical essence jewel" ) ) ) && gem.getRealm () == Realm.MIDGARD ) {
+			baseId += 200;
 		}
-		return id + gem.getStrength ().getLevel ();
+		return baseId + gem.getStrength ().getLevel ();
 	}
 
 	private static int getBaseIdHelper ( Gem gem ) {
@@ -42,8 +43,8 @@ public class GemUtil {
 			case "watery war spell stone" -> 1304600;
 			case "fiery war spell stone" -> 1304800;
 			case "heated war spell stone" -> 1305200;
-			case "earthen war spell stone" -> 1305400;
-			case "icy war spell stone" -> 1305400;
+			case "earthen war spell stone" -> 1305400;//error hib?
+			case "icy war spell stone" -> 1305400;//error hib?
 			case "airy war spell stone" -> 1305800;
 			case "fiery nature spell stone" -> 1306000;
 			case "finesse war spell stone" -> 1306200;
@@ -89,7 +90,24 @@ public class GemUtil {
 			case "earthen primal rune" -> 1306200;
 			case "finesse primal rune" -> 1306400;
 			case "airy primal rune" -> 1306600;
-
+			case "fiery primal rune" -> 1306800;
+			case "icy chaos rune" -> 1307000;
+			case "dusty chaos rune" -> 1307200;
+			case "heated chaos rune" -> 1307400;
+			case "vapor chaos rune" -> 1307600;
+			case "watery chaos rune" -> 1307800;
+			case "airy chaos rune" -> 1308000;
+			case "fiery chaos rune" -> 1308200;
+			case "earthen chaos rune" -> 1308400;
+			case "ice rune" -> 1309000;
+			case "dust rune" -> 1309200;
+			case "heat rune" -> 1309400;
+			case "vapor rune" -> 1309600;
+			case "lightning charged war" -> 1309800;
+			case "ashen primal rune" -> 1310000;
+			case "ashen rune" -> 1310200;
+			case "brilliant rune" -> 1310600;
+			//todo manca alb
 			default -> 0;
 		};
 	}
