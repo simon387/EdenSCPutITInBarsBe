@@ -1,8 +1,19 @@
 package it.simonecelia.edenSCputitinbarsBE.util;
 
+import it.simonecelia.edenSCputitinbarsBE.enumeration.Realm;
+
+
 public class GemUtil {
 
-	public static int getId ( String strength, String name ) {
+	public static int getId ( String strength, String name, Realm realm ) {
+		var id = getId ( strength, name );
+		if ( name.equalsIgnoreCase ( "blood essence jewel" ) && realm == Realm.MIDGARD ) {
+			id += 200;
+		}
+		return id;
+	}
+
+	private static int getId ( String strength, String name ) {
 		return switch ( ( strength + " " + name ).toLowerCase () ) {
 			case "raw fiery essence jewel" -> 1300000;
 			case "uncut fiery essence jewel" -> 1300001;
@@ -607,6 +618,99 @@ public class GemUtil {
 			case "flawless ethereal arcane spell stone" -> 1312208;
 			case "perfect ethereal arcane spell stone" -> 1312209;
 			case "raw brilliant spell stone" -> 1312400;
+			case "raw watery war rune" -> 1304600;
+			case "uncut watery war rune" -> 1304601;
+			case "rough watery war rune" -> 1304602;
+			case "flawed watery war rune" -> 1304603;
+			case "imperfect watery war rune" -> 1304604;
+			case "polished watery war rune" -> 1304605;
+			case "faceted watery war rune" -> 1304606;
+			case "precious watery war rune" -> 1304607;
+			case "flawless watery war rune" -> 1304608;
+			case "perfect watery war rune" -> 1304609;
+			case "raw fiery war rune" -> 1304800;
+			case "uncut fiery war rune" -> 1304801;
+			case "rough fiery war rune" -> 1304802;
+			case "flawed fiery war rune" -> 1304803;
+			case "imperfect fiery war rune" -> 1304804;
+			case "polished fiery war rune" -> 1304805;
+			case "faceted fiery war rune" -> 1304806;
+			case "precious fiery war rune" -> 1304807;
+			case "flawless fiery war rune" -> 1304808;
+			case "perfect fiery war rune" -> 1304809;
+			case "raw earthen war rune" -> 1305000;
+			case "uncut earthen war rune" -> 1305001;
+			case "rough earthen war rune" -> 1305002;
+			case "flawed earthen war rune" -> 1305003;
+			case "imperfect earthen war rune" -> 1305004;
+			case "polished earthen war rune" -> 1305005;
+			case "faceted earthen war rune" -> 1305006;
+			case "precious earthen war rune" -> 1305007;
+			case "flawless earthen war rune" -> 1305008;
+			case "perfect earthen war rune" -> 1305009;
+			case "raw heated war rune" -> 1305200;
+			case "uncut heated war rune" -> 1305201;
+			case "rough heated war rune" -> 1305202;
+			case "flawed heated war rune" -> 1305203;
+			case "imperfect heated war rune" -> 1305204;
+			case "polished heated war rune" -> 1305205;
+			case "faceted heated war rune" -> 1305206;
+			case "precious heated war rune" -> 1305207;
+			case "flawless heated war rune" -> 1305208;
+			case "perfect heated war rune" -> 1305209;
+			case "raw airy war rune" -> 1305400;
+			case "uncut airy war rune" -> 1305401;
+			case "rough airy war rune" -> 1305402;
+			case "flawed airy war rune" -> 1305403;
+			case "imperfect airy war rune" -> 1305404;
+			case "polished airy war rune" -> 1305405;
+			case "faceted airy war rune" -> 1305406;
+			case "precious airy war rune" -> 1305407;
+			case "flawless airy war rune" -> 1305408;
+			case "perfect airy war rune" -> 1305409;
+			case "raw vapor war rune" -> 1305600;
+			case "uncut vapor war rune" -> 1305601;
+			case "rough vapor war rune" -> 1305602;
+			case "flawed vapor war rune" -> 1305603;
+			case "imperfect vapor war rune" -> 1305604;
+			case "polished vapor war rune" -> 1305605;
+			case "faceted vapor war rune" -> 1305606;
+			case "precious vapor war rune" -> 1305607;
+			case "flawless vapor war rune" -> 1305608;
+			case "perfect vapor war rune" -> 1305609;
+			case "raw icy war rune" -> 1305800;
+			case "uncut icy war rune" -> 1305801;
+			case "rough icy war rune" -> 1305802;
+			case "flawed icy war rune" -> 1305803;
+			case "imperfect icy war rune" -> 1305804;
+			case "polished icy war rune" -> 1305805;
+			case "faceted icy war rune" -> 1305806;
+			case "precious icy war rune" -> 1305807;
+			case "flawless icy war rune" -> 1305808;
+			case "perfect icy war rune" -> 1305809;
+			case "raw finesse war rune" -> 1306000;
+			case "raw earthen primal rune" -> 1306200;
+			case "uncut earthen primal rune" -> 1306201;
+			case "rough earthen primal rune" -> 1306202;
+			case "flawed earthen primal rune" -> 1306203;
+			case "imperfect earthen primal rune" -> 1306204;
+			case "polished earthen primal rune" -> 1306205;
+			case "faceted earthen primal rune" -> 1306206;
+			case "precious earthen primal rune" -> 1306207;
+			case "flawless earthen primal rune" -> 1306208;
+			case "perfect earthen primal rune" -> 1306209;
+			case "raw finesse primal rune" -> 1306400;
+			case "raw airy primal rune" -> 1306600;
+			case "uncut airy primal rune" -> 1306601;
+			case "rough airy primal rune" -> 1306602;
+			case "flawed airy primal rune" -> 1306603;
+			case "imperfect airy primal rune" -> 1306604;
+			case "polished airy primal rune" -> 1306605;
+			case "faceted airy primal rune" -> 1306606;
+			case "precious airy primal rune" -> 1306607;
+			case "flawless airy primal rune" -> 1306608;
+			case "perfect airy primal rune" -> 1306609;
+
 
 			default -> 0;
 		};

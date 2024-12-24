@@ -19,7 +19,7 @@ public class Gem {
 		this.realm = realm;
 		this.strength = strength;
 		this.name = name;
-		this.id = GemUtil.getId ( strength, name );
+		this.id = GemUtil.getId ( strength, name, realm );
 	}
 
 	public Realm getRealm () {
