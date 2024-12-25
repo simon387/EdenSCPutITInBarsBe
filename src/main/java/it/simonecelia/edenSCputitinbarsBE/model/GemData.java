@@ -2,7 +2,7 @@ package it.simonecelia.edenSCputitinbarsBE.model;
 
 public class GemData {
 
-	public final static String[] arrSkillsAlbName =
+	public final static String[] skillsAlb =
 					{ "heated evocation sigil", "earthen fervor sigil", "heated battle jewel", "vapor war sigil", "fiery war sigil", "ashen fervor sigil",
 									"vacuous fervor sigil", "icy war sigil", "earthen evocation sigil", "airy fervor sigil", "dusty battle jewel",
 									"molten magma war sigil", "fiery evocation sigil", "watery fervor sigil", "icy evocation sigil", "vapor fervor sigil",
@@ -11,7 +11,7 @@ public class GemData {
 									"vapor evocation sigil", "earthen battle jewel", "airy battle jewel", "dusty war sigil", "heated war sigil",
 									"airy evocation sigil", "finesse war sigil", "finesse fervor sigil" };
 
-	public final static String[] arrSkillsMidName =
+	public final static String[] skillsMid =
 					{ "airy chaos rune", "earthen war rune", "airy primal rune", "earthen primal rune", "ashen primal rune", "airy war rune",
 									"heated battle jewel", "blighted primal rune", "icy chaos rune", "dusty battle jewel", "fiery war rune",
 									"lightning charged war rune",
@@ -20,7 +20,7 @@ public class GemData {
 									"heated chaos rune", "fiery battle jewel", "heated war rune", "airy battle jewel", "fiery primal rune", "fiery chaos rune",
 									"vapor chaos rune", "dusty chaos rune", "watery war rune", "vapor war rune", "finesse war rune", "finesse primal rune" };
 
-	public final static String[] arrSkillsHibName =
+	public final static String[] skillsHib =
 					{ "steaming nature spell stone", "water war spell stone", "fiery war spell stone", "icy war spell stone", "earthen war spell stone",
 									"heated battle jewel", "oozing nature spell stone", "aberrant arcane spell stone", "vapor arcane spell stone",
 									"dusty battle jewel", "ethereal arcane spell stone", "heated war spell stone", "fiery arcane spell stone",
@@ -31,27 +31,27 @@ public class GemData {
 									"airy arcane spell stone", "mineral encrusted nature spell stone", "icy arcane spell stone", "finesse war spell stone",
 									"finesse nature spell stone" };
 
-	public final static String[] arrFocusHibName =
+	public final static String[] focusHib =
 					{ "steaming focus stone", "oozing focus stone", "vapor focus stone", "ethereal focus stone", "fiery focus stone", "watery focus stone",
 									"earthen focus stone", "phantasmal focus stone", "spectral arcane focus stone", "mineral encrusted focus stone",
 									"icy focus stone", "brilliant focus stone" };
 
-	public final static String[] arrFocusMidName =
+	public final static String[] focusMid =
 					{ "ashen focus rune", "icy focus rune", "heated focus rune", "vapor focus rune", "dusty focus rune", "brilliant focus rune" };
 
-	public final static String[] arrFocusAlbName =
+	public final static String[] focusAlb =
 					{ "heated focus sigil", "icy focus sigil", "ashen focus sigil", "vacuous focus sigil", "earthen focus sigil", "fiery focus sigil",
 									"dusty focus sigil", "watery focus sigil", "salt encrusted focus sigil", "vapor focus sigil", "airy focus sigil",
 									"brilliant focus sigil" };
 
-	public final static String[] arrResistName =
+	public final static String[] resist =
 					{ "dusty shielding jewel", "icy shielding jewel", "heated shielding jewel", "light shielding jewel", "earthen shielding jewel",
 									"vapor shielding jewel", "airy shielding jewel", "fiery shielding jewel", "watery shielding jewel" };
 
-	public final static String[] arrStatsName =
+	public final static String[] stats =
 					{ "fiery essence jewel", "vapor essence jewel", "airy essence jewel", "earthen essence jewel", "dusty essence jewel",
 									"watery essence jewel", "heated essence jewel", "icy essence jewel" };
 
-	public final static String[] arrBloodEssence = { "Blood Essence Jewel" };
+	public final static String[] hits = { "Blood Essence Jewel" };
 
 }

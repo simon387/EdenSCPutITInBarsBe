@@ -11,15 +11,15 @@ import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.arrBloodEssence;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.arrFocusAlbName;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.arrFocusHibName;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.arrFocusMidName;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.arrResistName;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.arrSkillsAlbName;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.arrSkillsHibName;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.arrSkillsMidName;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.arrStatsName;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.hits;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.focusAlb;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.focusHib;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.focusMid;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.resist;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.skillsAlb;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.skillsHib;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.skillsMid;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.stats;
 
 
 @ApplicationScoped
@@ -50,20 +50,20 @@ public class GemService {
 	}
 
 	private Gem getGem ( Realm realm, String line, String strength ) {
-		var skills = arrSkillsAlbName;
-		var focuses = arrFocusAlbName;
+		var skills = skillsAlb;
+		var focuses = focusAlb;
 		focuses = switch ( realm ) {
 			case HIBERNIA -> {
-				skills = arrSkillsHibName;
-				yield arrFocusHibName;
+				skills = skillsHib;
+				yield focusHib;
 			}
 			case MIDGARD -> {
-				skills = arrSkillsMidName;
-				yield arrFocusMidName;
+				skills = skillsMid;
+				yield focusMid;
 			}
 			default -> focuses;
 		};
-		for ( var bonus : Stream.of ( skills, focuses, arrResistName, arrStatsName, arrBloodEssence ).flatMap ( Stream::of ).toArray ( String[]::new ) ) {
+		for ( var bonus : Stream.of ( skills, focuses, resist, stats, hits ).flatMap ( Stream::of ).toArray ( String[]::new ) ) {
 			if ( find ( line, bonus ) ) {
 				Log.infof ( "Line: \"%s\" contains word: \"%s\"", line, bonus );
 				return new Gem ( realm, strength, bonus );

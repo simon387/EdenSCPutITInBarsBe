@@ -7,7 +7,7 @@ import it.simonecelia.edenSCputitinbarsBE.model.Gem;
 public class GemUtil {
 
 	public static int getId ( Gem gem ) {
-		var baseId = getBaseIdHelper ( gem );
+		var baseId = getBaseId ( gem );
 		var name = gem.getName ().toLowerCase ();
 		if ( gem.getRealm () == Realm.MIDGARD && ( name.contains ( "blood essence jewel" ) || ( name.contains ( "mystical essence jewel" ) ) ) ) {
 			baseId += 200;
@@ -21,7 +21,7 @@ public class GemUtil {
 		return baseId + gem.getStrength ().getLevel ();
 	}
 
-	private static int getBaseIdHelper ( Gem gem ) {
+	private static int getBaseId ( Gem gem ) {
 		return switch ( ( gem.getName () ).toLowerCase () ) {
 			case "fiery essence jewel" -> 1300000;
 			case "earthen essence jewel" -> 1300200;
@@ -154,6 +154,15 @@ public class GemUtil {
 			case "ashen sigil" -> 1312600;
 			case "brilliant sigil" -> 1313000;
 			default -> 0;
+		};
+	}
+
+	public static int getImbue ( Gem gem ) {
+		return switch ( gem.getType () ) {
+		case SKILL -> gem.getStrength ().getSkillImbue ();
+			case FOCUS -> 1; // lol
+			case RESIST -> gem.getStrength ().getResistImbue ();
+			case STAT, HITS -> gem.getStrength ().getStatImbue ();
 		};
 	}
 }
