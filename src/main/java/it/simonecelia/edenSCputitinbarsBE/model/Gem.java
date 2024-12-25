@@ -1,5 +1,6 @@
 package it.simonecelia.edenSCputitinbarsBE.model;
 
+import io.quarkus.logging.Log;
 import it.simonecelia.edenSCputitinbarsBE.enumeration.GemStrength;
 import it.simonecelia.edenSCputitinbarsBE.enumeration.GemType;
 import it.simonecelia.edenSCputitinbarsBE.enumeration.Realm;
@@ -18,7 +19,7 @@ public class Gem {
 
 	private final GemType type;
 
-	private final int imbue;
+	private final double imbue;
 
 	public Gem ( Realm realm, String strength, String name ) {
 		this.realm = realm;
@@ -27,6 +28,7 @@ public class Gem {
 		this.id = GemUtil.getId ( this );
 		this.type = GemType.fromName ( name );
 		this.imbue = GemUtil.getImbue ( this );
+		Log.infof ( "Created Gem: %s", this );
 	}
 
 	public Realm getRealm () {
@@ -49,7 +51,19 @@ public class Gem {
 		return type;
 	}
 
-	public int getImbue () {
+	public double getImbue () {
 		return imbue;
+	}
+
+	@Override
+	public String toString () {
+		return "Gem{" +
+						"realm=" + realm +
+						", strength=" + strength +
+						", name='" + name + '\'' +
+						", id=" + id +
+						", type=" + type +
+						", imbue=" + imbue +
+						'}';
 	}
 }

@@ -157,12 +157,13 @@ public class GemUtil {
 		};
 	}
 
-	public static int getImbue ( Gem gem ) {
+	public static double getImbue ( Gem gem ) {
 		return switch ( gem.getType () ) {
-		case SKILL -> gem.getStrength ().getSkillImbue ();
+		case SKILL -> gem.getStrength ().getSkillValue () * 3;
 			case FOCUS -> 1; // lol
-			case RESIST -> gem.getStrength ().getResistImbue ();
-			case STAT, HITS -> gem.getStrength ().getStatImbue ();
+			case RESIST -> gem.getStrength ().getResistValue ();
+			case STAT -> gem.getStrength ().getStatValue () * 0.33;
+			case HITS -> gem.getStrength ().getHitsValue () * 0.2;
 		};
 	}
 }
