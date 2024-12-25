@@ -3,19 +3,22 @@ package it.simonecelia.edenSCputitinbarsBE.util;
 import it.simonecelia.edenSCputitinbarsBE.enumeration.Realm;
 import it.simonecelia.edenSCputitinbarsBE.model.Gem;
 
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.BLOOD_ESSENCE_JEWEL;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.MYSTICAL_ESSENCE_JEWEL;
+
 
 public class GemUtil {
 
 	public static int getId ( Gem gem ) {
 		var baseId = getBaseId ( gem );
 		var name = gem.getName ().toLowerCase ();
-		if ( gem.getRealm () == Realm.MIDGARD && ( name.contains ( "blood essence jewel" ) || ( name.contains ( "mystical essence jewel" ) ) ) ) {
+		if ( gem.getRealm () == Realm.MIDGARD && ( name.contains ( BLOOD_ESSENCE_JEWEL ) || ( name.contains ( MYSTICAL_ESSENCE_JEWEL ) ) ) ) {
 			baseId += 200;
 		}
-		if ( gem.getRealm () == Realm.ALBION && name.contains ( "blood essence jewel" ) ) {
+		if ( gem.getRealm () == Realm.ALBION && name.contains ( BLOOD_ESSENCE_JEWEL ) ) {
 			baseId = 1309200;
 		}
-		if ( gem.getRealm () == Realm.ALBION && name.contains ( "mystical essence jewel" ) ) {
+		if ( gem.getRealm () == Realm.ALBION && name.contains ( MYSTICAL_ESSENCE_JEWEL ) ) {
 			baseId = 1309400;
 		}
 		return baseId + gem.getStrength ().getLevel ();
@@ -64,8 +67,8 @@ public class GemUtil {
 			case "vapor arcane spell stone" -> 1307800;
 			case "icy arcane spell stone" -> 1308000;
 			case "earthen arcane spell stone" -> 1308200;
-			case "blood essence jewel" -> 1308400;
-			case "mystical essence jewel" -> 1308600;
+			case BLOOD_ESSENCE_JEWEL -> 1308400;
+			case MYSTICAL_ESSENCE_JEWEL -> 1308600;
 			case "fire spell stone" -> 1308800;
 			case "water spell stone" -> 1309000;
 			case "vapor spell stone" -> 1309200;
