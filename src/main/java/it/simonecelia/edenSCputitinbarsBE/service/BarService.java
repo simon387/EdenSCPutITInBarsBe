@@ -71,17 +71,17 @@ public class BarService {
 				} else {
 					pieces++;
 					pieceImbue = 0;
-					writeSlot ( "Hotkey_" + ( i + pieces ), "44,13,kek,0" );
+					writeSlot ( i + pieces, "44,13" );
 				}
 			}
-			writeSlot ( "Hotkey_" + ( i + pieces ), "45," + gems.get ( i ).getId () + ",kek,0" );
+			writeSlot ( i + pieces, "45," + gems.get ( i ).getId () );
 		}
 		Log.infof ( "Writing Gems to: %s", iniFile );
 		ini.store ();
 	}
 
-	private void writeSlot ( String option, String value ) {
-		ini.put ( "Quickbar3", option, value );
-		Log.infof ( "Writing Gems to: %s = %s", option, value );
+	private void writeSlot ( int optionN, String value ) {
+		ini.put ( "Quickbar3", "Hotkey_" + optionN, value + ",kek,0" );
+		Log.infof ( "Writing Gems to: %d = %s", optionN, value );
 	}
 }

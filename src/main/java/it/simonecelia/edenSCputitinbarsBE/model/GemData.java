@@ -2,6 +2,10 @@ package it.simonecelia.edenSCputitinbarsBE.model;
 
 public class GemData {
 
+	public final static String BLOOD_ESSENCE_JEWEL = "blood essence jewel";
+
+	public final static String MYSTICAL_ESSENCE_JEWEL = "mystical essence jewel";
+
 	public final static String[] skillsAlb =
 					{ "heated evocation sigil", "earthen fervor sigil", "heated battle jewel", "vapor war sigil", "fiery war sigil", "ashen fervor sigil",
 									"vacuous fervor sigil", "icy war sigil", "earthen evocation sigil", "airy fervor sigil", "dusty battle jewel",
@@ -52,6 +56,6 @@ public class GemData {
 					{ "fiery essence jewel", "vapor essence jewel", "airy essence jewel", "earthen essence jewel", "dusty essence jewel",
 									"watery essence jewel", "heated essence jewel", "icy essence jewel" };
 
-	public final static String[] hits = { "Blood Essence Jewel" };
+	public final static String[] hits = { BLOOD_ESSENCE_JEWEL };
 
 }
