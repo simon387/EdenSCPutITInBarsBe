@@ -60,7 +60,7 @@ public class BarService {
 		var pieces = 0;
 		for ( int i = 0; i < gems.size (); i++ ) {
 			imbue += gems.get ( i ).getImbue ();
-			ini.put ( "Quickbar3", "Hotkey_" + i + pieces, "45," + gems.get ( i ).getId () + ",kek,0" );
+			ini.put ( "Quickbar3", "Hotkey_" + i, "45," + gems.get ( i ).getId () + ",kek,0" );
 			if ( imbue > 37 ) {
 				Log.infof ("Total imbue piece #%s: %d", pieces, imbue);
 				imbue = 0;
