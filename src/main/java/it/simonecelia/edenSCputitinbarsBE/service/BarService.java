@@ -31,6 +31,11 @@ public class BarService {
 	@ConfigProperty ( name = "default.mid.crafter" )
 	String defaultMidCrafter;
 
+	@ConfigProperty ( name = "enable.imbue.calc" )
+	boolean enableImbueCalc;
+
+	private Wini ini;
+
 	public void newBar ( Realm realm, String character, Integer gemsNumber, String payload ) throws IOException {
 		var gems = gemService.getGems ( realm, gemsNumber, payload );
 		if ( gems.isEmpty () ) {
@@ -54,21 +59,29 @@ public class BarService {
 			}
 		}
 		var iniFile = new File ( barPath + character + "-41.ini" );
-		var ini = new Wini ( iniFile );
+		ini = new Wini ( iniFile );
 
-		var imbue = 0;
+		var pieceImbue = 0.0;
 		var pieces = 0;
 		for ( int i = 0; i < gems.size (); i++ ) {
-			imbue += gems.get ( i ).getImbue ();
-			ini.put ( "Quickbar3", "Hotkey_" + i, "45," + gems.get ( i ).getId () + ",kek,0" );
-			if ( imbue > 37 ) {
-				Log.infof ("Total imbue piece #%s: %d", pieces, imbue);
-				imbue = 0;
-//				pieces++;
-//				ini.put ( "Quickbar3", "Hotkey_" + i + pieces, "44,13,kek,0" );
+			if ( enableImbueCalc ) {
+				var imbue = gems.get ( i ).getImbue ();
+				if ( pieceImbue + imbue < 40 ) {
+					pieceImbue += imbue;
+				} else {
+					pieces++;
+					pieceImbue = 0;
+					writeSlot ( "Hotkey_" + ( i + pieces ), "44,13,kek,0" );
+				}
 			}
+			writeSlot ( "Hotkey_" + ( i + pieces ), "45," + gems.get ( i ).getId () + ",kek,0" );
 		}
 		Log.infof ( "Writing Gems to: %s", iniFile );
 		ini.store ();
+	}
+
+	private void writeSlot ( String option, String value ) {
+		ini.put ( "Quickbar3", option, value );
+		Log.infof ( "Writing Gems to: %s = %s", option, value );
 	}
 }
