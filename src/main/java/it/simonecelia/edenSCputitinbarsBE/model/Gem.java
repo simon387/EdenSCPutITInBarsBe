@@ -29,7 +29,7 @@ public class Gem {
 		this.name = name;
 		this.id = calcId ( this );
 		this.type = GemType.fromName ( name );
-		this.imbue = getImbue ( this );
+		this.imbue = calcImbue ( this );
 		Log.infof ( "Created Gem: %s", this );
 	}
 
@@ -184,7 +184,7 @@ public class Gem {
 		};
 	}
 
-	private double getImbue ( Gem gem ) {
+	private double calcImbue ( Gem gem ) {
 		return switch ( gem.getType () ) {
 			case SKILL -> gem.getStrength ().getSkillValue () * 3;
 			case FOCUS -> 1; // lol
