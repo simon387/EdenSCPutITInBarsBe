@@ -56,8 +56,16 @@ public class BarService {
 		var iniFile = new File ( barPath + character + "-41.ini" );
 		var ini = new Wini ( iniFile );
 
+		var imbue = 0;
+		var pieces = 0;
 		for ( int i = 0; i < gems.size (); i++ ) {
-			ini.put ( "Quickbar3", "Hotkey_" + i, "45," + gems.get ( i ).getId () + ",kek,0" );
+			imbue += gems.get ( i ).getImbue ();
+			ini.put ( "Quickbar3", "Hotkey_" + i + pieces, "45," + gems.get ( i ).getId () + ",kek,0" );
+			if ( imbue > 37 ) {
+				imbue = 0;
+				pieces++;
+				ini.put ( "Quickbar3", "Hotkey_" + i + pieces, "44,13,kek,0" );
+			}
 		}
 		Log.infof ( "Writing Gems to: %s", iniFile );
 		ini.store ();
