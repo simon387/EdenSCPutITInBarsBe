@@ -6,8 +6,12 @@ public class GemData {
 
 	public final static String MYSTICAL_ESSENCE_JEWEL = "mystical essence jewel";
 
+	public final static String HEATED_EVOCATION_SIGIL = "heated evocation sigil";
+
+	public final static String EARTHEN_FERVOR_SIGIL = "earthen fervor sigil";
+
 	public final static String[] skillsAlb =
-					{ "heated evocation sigil", "earthen fervor sigil", "heated battle jewel", "vapor war sigil", "fiery war sigil", "ashen fervor sigil",
+					{ HEATED_EVOCATION_SIGIL, EARTHEN_FERVOR_SIGIL, "heated battle jewel", "vapor war sigil", "fiery war sigil", "ashen fervor sigil",
 									"vacuous fervor sigil", "icy war sigil", "earthen evocation sigil", "airy fervor sigil", "dusty battle jewel",
 									"molten magma war sigil", "fiery evocation sigil", "watery fervor sigil", "icy evocation sigil", "vapor fervor sigil",
 									"airy war sigil", "dusty evocation sigil", "watery evocation sigil", "salt encrusted fervor sigil", "vapor battle jewel",

@@ -5,11 +5,8 @@ import it.simonecelia.edenSCputitinbarsBE.enumeration.GemStrength;
 import it.simonecelia.edenSCputitinbarsBE.enumeration.GemType;
 import it.simonecelia.edenSCputitinbarsBE.enumeration.Realm;
 
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.BLOOD_ESSENCE_JEWEL;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.MYSTICAL_ESSENCE_JEWEL;
 
-
-public class Gem {
+public class Gem extends GemData{
 
 	private final Realm realm;
 
@@ -153,13 +150,13 @@ public class Gem {
 			case "fiery fervor sigil" -> 1306600;
 			case "airy fervor sigil" -> 1306800;
 			case "watery fervor sigil" -> 1307000;
-			case "earthen fervor sigil" -> 1307200;
+			case EARTHEN_FERVOR_SIGIL -> 1307200;
 			case "vapor fervor sigil" -> 1307400;
 			case "earthen evocation sigil" -> 1307600;
 			case "icy evocation sigil" -> 1307800;
 			case "fiery evocation sigil" -> 1308000;
 			case "airy evocation sigil" -> 1308200;
-			case "heated evocation sigil" -> 1308400;
+			case HEATED_EVOCATION_SIGIL -> 1308400;
 			case "dusty evocation sigil" -> 1308600;
 			case "vapor evocation sigil" -> 1308800;
 			case "watery evocation sigil" -> 1309000;
