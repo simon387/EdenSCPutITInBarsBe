@@ -1,16 +1,16 @@
 package it.simonecelia.edenSCputitinbarsBE.enumeration;
 
+import it.simonecelia.edenSCputitinbarsBE.model.GemData;
+
 import java.util.Arrays;
 
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.focusAlb;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.focusHib;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.focusMid;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.hits;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.resist;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.skillsAlb;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.skillsHib;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.skillsMid;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.stats;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.FOCUS_ALB;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.FOCUS_HIB;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.FOCUS_MID;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.SKILLS_ALB;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.SKILLS_HIB;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.SKILLS_MID;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.STATS;
 
 
 public enum GemType {
@@ -21,19 +21,19 @@ public enum GemType {
 	HITS;
 
 	public static GemType fromName ( String name ) {
-		if ( Arrays.asList ( skillsMid ).contains ( name ) || Arrays.asList ( skillsHib ).contains ( name ) || Arrays.asList ( skillsAlb ).contains ( name ) ) {
+		if ( Arrays.asList ( SKILLS_MID ).contains ( name ) || Arrays.asList ( SKILLS_HIB ).contains ( name ) || Arrays.asList ( SKILLS_ALB ).contains ( name ) ) {
 			return SKILL;
 		}
-		if ( Arrays.asList ( focusHib ).contains ( name ) || Arrays.asList ( focusMid ).contains ( name ) || Arrays.asList ( focusAlb ).contains ( name ) ) {
+		if ( Arrays.asList ( FOCUS_HIB ).contains ( name ) || Arrays.asList ( FOCUS_MID ).contains ( name ) || Arrays.asList ( FOCUS_ALB ).contains ( name ) ) {
 			return FOCUS;
 		}
-		if ( Arrays.asList ( resist ).contains ( name ) ) {
+		if ( Arrays.asList ( GemData.RESISTS ).contains ( name ) ) {
 			return RESIST;
 		}
-		if ( Arrays.asList ( stats ).contains ( name ) ) {
+		if ( Arrays.asList ( STATS ).contains ( name ) ) {
 			return STAT;
 		}
-		if ( hits[0].equalsIgnoreCase ( name ) ) {
+		if ( GemData.HITS[0].equalsIgnoreCase ( name ) ) {
 			return HITS;
 		}
 		return null;
