@@ -183,8 +183,8 @@ public class Gem extends GemData {
 
 	private double calcImbue ( Gem gem ) {
 		return switch ( gem.getType () ) {
-			case SKILL -> gem.getStrength ().getSkillValue () * 3;
-			case FOCUS -> 1; // lol
+			case SKILL_ALB, SKILL_HIB, SKILL_MID, SKILL_ALL -> gem.getStrength ().getSkillValue () * 3;
+			case FOCUS_ALB, FOCUS_HIB, FOCUS_MID, UNSET -> 1; // lol
 			case RESIST -> gem.getStrength ().getResistValue ();
 			case STAT -> gem.getStrength ().getStatValue () * 0.33;
 			case HITS -> gem.getStrength ().getHitsValue () * 0.2;

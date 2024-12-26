@@ -12,9 +12,9 @@ import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 import static it.simonecelia.edenSCputitinbarsBE.model.GemData.HITS;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.FOCUS_ALB;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.FOCUS_HIB;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.FOCUS_MID;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.FOCUSES_ALB;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.FOCUSES_HIB;
+import static it.simonecelia.edenSCputitinbarsBE.model.GemData.FOCUSES_MID;
 import static it.simonecelia.edenSCputitinbarsBE.model.GemData.RESISTS;
 import static it.simonecelia.edenSCputitinbarsBE.model.GemData.SKILLS_ALB;
 import static it.simonecelia.edenSCputitinbarsBE.model.GemData.SKILLS_HIB;
@@ -51,15 +51,15 @@ public class GemService {
 
 	private Gem getGem ( Realm realm, String line, String strength ) {
 		var skills = SKILLS_ALB;
-		var focuses = FOCUS_ALB;
+		var focuses = FOCUSES_ALB;
 		focuses = switch ( realm ) {
 			case HIBERNIA -> {
 				skills = SKILLS_HIB;
-				yield FOCUS_HIB;
+				yield FOCUSES_HIB;
 			}
 			case MIDGARD -> {
 				skills = SKILLS_MID;
-				yield FOCUS_MID;
+				yield FOCUSES_MID;
 			}
 			default -> focuses;
 		};
