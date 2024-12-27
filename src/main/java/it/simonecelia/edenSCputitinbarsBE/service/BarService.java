@@ -19,9 +19,6 @@ public class BarService {
 	@Inject
 	GemService gemService;
 
-	@ConfigProperty ( name = "bar.path" )
-	String barPath;
-
 	@ConfigProperty ( name = "default.alb.crafter" )
 	String defaultAlbCrafter;
 
@@ -58,7 +55,8 @@ public class BarService {
 				break;
 			}
 		}
-		var iniFile = new File ( barPath + character + "-41.ini" );
+		var iniFile = new File ( "C:\\Users\\" + System.getProperty (
+						"user.name" ) + "\\AppData\\Roaming\\Electronic Arts\\Dark Age of Camelot\\eden\\" + character + "-41.ini" );
 		ini = new Wini ( iniFile );
 
 		var pieceImbue = 0.0;
