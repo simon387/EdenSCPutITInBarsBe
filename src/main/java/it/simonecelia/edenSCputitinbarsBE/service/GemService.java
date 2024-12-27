@@ -2,6 +2,7 @@ package it.simonecelia.edenSCputitinbarsBE.service;
 
 import io.quarkus.logging.Log;
 import it.simonecelia.edenSCputitinbarsBE.enumeration.GemStrength;
+import it.simonecelia.edenSCputitinbarsBE.enumeration.Gems;
 import it.simonecelia.edenSCputitinbarsBE.enumeration.Realm;
 import it.simonecelia.edenSCputitinbarsBE.model.Gem;
 import jakarta.enterprise.context.ApplicationScoped;
@@ -10,16 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
-
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.HITS;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.FOCUSES_ALB;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.FOCUSES_HIB;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.FOCUSES_MID;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.RESISTS;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.SKILLS_ALB;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.SKILLS_HIB;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.SKILLS_MID;
-import static it.simonecelia.edenSCputitinbarsBE.model.GemData.STATS;
 
 
 @ApplicationScoped
@@ -50,23 +41,23 @@ public class GemService {
 	}
 
 	private Gem getGem ( Realm realm, String line, String strength ) {
-		var skills = SKILLS_ALB;
-		var focuses = FOCUSES_ALB;
+		var skills = Gems.getAlbSkills ();
+		var focuses = Gems.getAlbFocus ();
 		focuses = switch ( realm ) {
 			case HIBERNIA -> {
-				skills = SKILLS_HIB;
-				yield FOCUSES_HIB;
+				skills = Gems.getHibSkills ();
+				yield Gems.getHibFocus ();
 			}
 			case MIDGARD -> {
-				skills = SKILLS_MID;
-				yield FOCUSES_MID;
+				skills = Gems.getMidSkills ();
+				yield Gems.getMidFocus ();
 			}
 			default -> focuses;
 		};
-		for ( var bonus : Stream.of ( skills, focuses, RESISTS, STATS, HITS ).flatMap ( Stream::of ).toArray ( String[]::new ) ) {
-			if ( find ( line, bonus ) ) {
-				Log.infof ( "Line: \"%s\" contains word: \"%s\"", line, bonus );
-				return new Gem ( realm, strength, bonus );
+		for ( var bn : Stream.of ( skills, focuses, Gems.getResists (), Gems.getStats (), Gems.getHits () ).flatMap ( Stream::of ).toArray ( String[]::new ) ) {
+			if ( find ( line, bn ) ) {
+				Log.infof ( "Line: \"%s\" contains word: \"%s\"", line, bn );
+				return new Gem ( realm, strength, Gems.getByName ( bn ) );
 			}
 		}
 		throw new RuntimeException ( "Gem not found! Line: " + line );

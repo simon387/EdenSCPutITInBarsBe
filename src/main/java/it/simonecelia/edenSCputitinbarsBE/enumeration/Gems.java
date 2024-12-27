@@ -1,7 +1,10 @@
 package it.simonecelia.edenSCputitinbarsBE.enumeration;
 
+import java.util.Arrays;
+
 import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.FOCUS_ALB;
 import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.FOCUS_HIB;
+import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.FOCUS_MID;
 import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.HITS;
 import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.RESIST;
 import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.SKILL_ALB;
@@ -12,7 +15,7 @@ import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.STAT;
 import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.UNSET;
 
 
-public enum GemName {
+public enum Gems {
 	BLOOD_ESSENCE_JEWEL ( HITS, 1308400 ),
 	MYSTICAL_ESSENCE_JEWEL ( UNSET, 1308600 ),
 	HEATED_EVOCATION_SIGIL ( SKILL_ALB, 1308400 ),
@@ -173,11 +176,79 @@ public enum GemName {
 	SALT_CRUSTED_FERVOR_SIGIL ( UNSET, 1311600 ),
 	SALT_CRUSTED_SIGIL ( UNSET, 1312400 ),
 	ASHEN_SIGIL ( UNSET, 1312600 ),
-	BRILLIANT_SIGIL ( UNSET, 1313000 ),
+	BRILLIANT_SIGIL ( UNSET, 1313000 );
 
-	;
+	private final String name;
 
-	GemName ( GemType type, Integer baseId ) {
+	private final GemType type;
 
+	private final Integer baseId;
+
+	Gems ( GemType type, Integer baseId ) {
+		this.name = name ().toLowerCase ().replaceAll ( "_", " " );
+		this.type = type;
+		this.baseId = baseId;
+	}
+
+	public static Gems getByName ( String name ) {
+		return Arrays.stream ( Gems.values () )
+						.filter ( gem -> gem.name.equalsIgnoreCase ( name ) )
+						.findFirst ()
+						.orElse ( null );
+	}
+
+	public static String[] getAlbSkills () {
+		return getByTypeHelper ( SKILL_ALB, SKILL_ALL );
+	}
+
+	public static String[] getHibSkills () {
+		return getByTypeHelper ( SKILL_HIB, SKILL_ALL );
+	}
+
+	public static String[] getMidSkills () {
+		return getByTypeHelper ( SKILL_MID, SKILL_ALL );
+	}
+
+	public static String[] getAlbFocus () {
+		return getByTypeHelper ( FOCUS_ALB, UNSET );
+	}
+
+	public static String[] getHibFocus () {
+		return getByTypeHelper ( FOCUS_HIB, UNSET );
+	}
+
+	public static String[] getMidFocus () {
+		return getByTypeHelper ( FOCUS_MID, UNSET );
+	}
+
+	public static String[] getResists () {
+		return getByTypeHelper ( RESIST );
+	}
+
+	public static String[] getStats () {
+		return getByTypeHelper ( STAT );
+	}
+
+	public static String[] getHits () {
+		return getByTypeHelper ( HITS );
+	}
+
+	private static String[] getByTypeHelper ( GemType... types ) {
+		return Arrays.stream ( Gems.values () )
+						.filter ( gem -> Arrays.asList ( types ).contains ( gem.type ) )
+						.map ( gem -> gem.name )
+						.toArray ( String[]::new );
+	}
+
+	public String getName () {
+		return name;
+	}
+
+	public GemType getType () {
+		return type;
+	}
+
+	public Integer getBaseId () {
+		return baseId;
 	}
 }
