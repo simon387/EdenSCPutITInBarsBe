@@ -15,7 +15,7 @@ import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.STAT;
 import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.UNSET;
 
 
-public enum Gems {
+public enum Gem {
 	BLOOD_ESSENCE_JEWEL ( HITS, 1308400 ),
 	MYSTICAL_ESSENCE_JEWEL ( UNSET, 1308600 ),
 	HEATED_EVOCATION_SIGIL ( SKILL_ALB, 1308400 ),
@@ -184,14 +184,14 @@ public enum Gems {
 
 	private final Integer baseId;
 
-	Gems ( GemType type, Integer baseId ) {
+	Gem ( GemType type, Integer baseId ) {
 		this.name = name ().toLowerCase ().replaceAll ( "_", " " );
 		this.type = type;
 		this.baseId = baseId;
 	}
 
-	public static Gems getByName ( String name ) {
-		return Arrays.stream ( Gems.values () )
+	public static Gem getByName ( String name ) {
+		return Arrays.stream ( Gem.values () )
 						.filter ( gem -> gem.name.equalsIgnoreCase ( name ) )
 						.findFirst ()
 						.orElse ( null );
@@ -234,7 +234,7 @@ public enum Gems {
 	}
 
 	private static String[] getByTypeHelper ( GemType... types ) {
-		return Arrays.stream ( Gems.values () )
+		return Arrays.stream ( Gem.values () )
 						.filter ( gem -> Arrays.asList ( types ).contains ( gem.type ) )
 						.map ( gem -> gem.name )
 						.toArray ( String[]::new );
