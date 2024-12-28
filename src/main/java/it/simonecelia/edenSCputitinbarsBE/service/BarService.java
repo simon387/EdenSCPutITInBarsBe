@@ -55,8 +55,8 @@ public class BarService {
 				break;
 			}
 		}
-		var iniFile = new File ( "C:\\Users\\" + System.getProperty (
-						"user.name" ) + "\\AppData\\Roaming\\Electronic Arts\\Dark Age of Camelot\\eden\\" + character + "-41.ini" );
+		var iniFile = new File ( "C:\\Users\\" + System.getProperty ( "user.name" ) +
+						"\\AppData\\Roaming\\Electronic Arts\\Dark Age of Camelot\\eden\\" + character + "-41.ini" );
 		ini = new Wini ( iniFile );
 
 		var pieceImbue = 0.0;
