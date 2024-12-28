@@ -54,10 +54,10 @@ public class GemService {
 			}
 			default -> focuses;
 		};
-		for ( var bn : Stream.of ( skills, focuses, Gem.getResists (), Gem.getStats (), Gem.getHits () ).flatMap ( Stream::of ).toArray ( String[]::new ) ) {
-			if ( find ( line, bn ) ) {
-				Log.infof ( "Line: \"%s\" contains word: \"%s\"", line, bn );
-				return new GemModel ( realm, strength, Gem.getByName ( bn ) );
+		for ( var name : Stream.of ( skills, focuses, Gem.getResists (), Gem.getStats (), Gem.getHits () ).flatMap ( Stream::of ).toArray ( String[]::new ) ) {
+			if ( find ( line, name ) ) {
+				Log.infof ( "Line: \"%s\" contains word: \"%s\"", line, name );
+				return new GemModel ( realm, strength, Gem.getByName ( name ) );
 			}
 		}
 		throw new RuntimeException ( "GemModel not found! Line: " + line );

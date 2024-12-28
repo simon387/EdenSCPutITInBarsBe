@@ -6,15 +6,15 @@ import java.util.Arrays;
 @SuppressWarnings ( "unused" )
 public enum GemStrength {
 	RAW ( 0, 1, 1, 1, 1, 1, 1, 4 ),
-	UNCUT ( 1, 5, 3, 2, 4, 2, 2, 12 ),
-	ROUGH ( 2, 10, 5, 4, 7, 3, 3, 20 ),
-	FLAWED ( 3, 15, 7, 8, 10, 5, 4, 28 ),
-	IMPERFECT ( 4, 20, 9, 12, 13, 7, 5, 36 ),
-	POLISHED ( 5, 25, 11, 16, 16, 9, 6, 44 ),
-	FACETED ( 6, 30, 13, 20, 19, 11, 7, 52 ),
-	PRECIOUS ( 7, 35, 15, 24, 22, 13, 8, 60 ),
-	FLAWLESS ( 8, 40, 17, 28, 25, 15, 9, 68 ),
-	PERFECT ( 9, 45, 19, 32, 28, 17, 10, 76 );
+	UNCUT ( 1, 5, 2, 2, 2, 3, 4, 12 ),
+	ROUGH ( 2, 10, 3, 4, 3, 5, 7, 20 ),
+	FLAWED ( 3, 15, 4, 8, 5, 7, 10, 28 ),
+	IMPERFECT ( 4, 20, 5, 12, 7, 9, 13, 36 ),
+	POLISHED ( 5, 25, 6, 16, 9, 11, 16, 44 ),
+	FACETED ( 6, 30, 7, 20, 11, 13, 19, 52 ),
+	PRECIOUS ( 7, 35, 8, 24, 13, 15, 22, 60 ),
+	FLAWLESS ( 8, 40, 9, 28, 15, 17, 25, 68 ),
+	PERFECT ( 9, 45, 10, 32, 17, 19, 28, 76 );
 
 	private final String name;
 
@@ -34,7 +34,7 @@ public enum GemStrength {
 
 	private final int hitsValue;
 
-	GemStrength ( int level, int skillImbue, int statImbue, int resistImbue, int statValue, int resistValue, int skillValue, int hitsValue ) {
+	GemStrength ( int level, int skillImbue, int skillValue, int resistImbue, int resistValue, int statImbue, int statValue, int hitsValue ) {
 		this.name = this.name ().toLowerCase ();
 		this.level = level;
 		this.skillImbue = skillImbue;
