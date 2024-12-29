@@ -11,5 +11,5 @@ public enum GemType {
 	RESIST,
 	STAT,
 	HITS,
-	UNSET;
+	UNSET
 }
