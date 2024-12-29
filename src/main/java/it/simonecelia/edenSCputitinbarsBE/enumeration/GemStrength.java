@@ -46,6 +46,19 @@ public enum GemStrength {
 		this.hitsValue = hitsValue;
 	}
 
+	public static String[] getArray () {
+		return Arrays.stream ( GemStrength.values () )
+						.map ( GemStrength::getName )
+						.toArray ( String[]::new );
+	}
+
+	public static GemStrength fromName ( String name ) {
+		return Arrays.stream ( GemStrength.values () )
+						.filter ( gs -> gs.getName ().equalsIgnoreCase ( name ) )
+						.findFirst ()
+						.orElseThrow ( () -> new IllegalArgumentException ( "No enum constant for strength: " + name ) );
+	}
+
 	public String getName () {
 		return name;
 	}
@@ -80,18 +93,5 @@ public enum GemStrength {
 
 	public int getHitsValue () {
 		return hitsValue;
-	}
-
-	public static String[] getArray () {
-		return Arrays.stream ( GemStrength.values () )
-						.map ( GemStrength::getName )
-						.toArray ( String[]::new );
-	}
-
-	public static GemStrength fromName ( String name ) {
-		return Arrays.stream ( GemStrength.values () )
-						.filter ( gs -> gs.getName ().equalsIgnoreCase ( name ) )
-						.findFirst ()
-						.orElseThrow ( () -> new IllegalArgumentException ( "No enum constant for strength: " + name ) );
 	}
 }
