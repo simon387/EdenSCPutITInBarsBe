@@ -12,6 +12,18 @@ import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
+import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.FOCUS_ALB;
+import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.FOCUS_HIB;
+import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.FOCUS_MID;
+import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.HITS;
+import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.RESIST;
+import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.SKILL_ALB;
+import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.SKILL_ALL;
+import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.SKILL_HIB;
+import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.SKILL_MID;
+import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.STAT;
+import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.UNSET;
+
 
 @ApplicationScoped
 public class GemService {
@@ -41,20 +53,20 @@ public class GemService {
 	}
 
 	private GemModel getGem ( Realm realm, String line, String strength ) {
-		var skills = Gem.getAlbSkills ();
-		var focuses = Gem.getAlbFocus ();
+		var skills = Gem.getByType ( SKILL_ALB, SKILL_ALL );
+		var focuses = Gem.getByType ( FOCUS_ALB, UNSET );
 		focuses = switch ( realm ) {
 			case HIBERNIA -> {
-				skills = Gem.getHibSkills ();
-				yield Gem.getHibFocus ();
+				skills = Gem.getByType ( SKILL_HIB, SKILL_ALL );
+				yield Gem.getByType ( FOCUS_HIB, UNSET );
 			}
 			case MIDGARD -> {
-				skills = Gem.getMidSkills ();
-				yield Gem.getMidFocus ();
+				skills = Gem.getByType ( SKILL_MID, SKILL_ALL );
+				yield Gem.getByType ( FOCUS_MID, UNSET );
 			}
 			default -> focuses;
 		};
-		for ( var name : Stream.of ( skills, focuses, Gem.getResists (), Gem.getStats (), Gem.getHits () ).flatMap ( Stream::of ).toArray ( String[]::new ) ) {
+		for ( var name : Stream.of ( skills, focuses, Gem.getByType ( RESIST, STAT, HITS) ).flatMap ( Stream::of ).toArray ( String[]::new ) ) {
 			if ( find ( line, name ) ) {
 				Log.infof ( "Line: \"%s\" contains word: \"%s\"", line, name );
 				return new GemModel ( realm, strength, Gem.getByName ( name ) );
