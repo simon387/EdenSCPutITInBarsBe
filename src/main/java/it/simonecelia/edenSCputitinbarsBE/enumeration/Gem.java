@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.FOCUS_ALB;
 import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.FOCUS_HIB;
-import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.FOCUS_MID;
 import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.HITS;
 import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.RESIST;
 import static it.simonecelia.edenSCputitinbarsBE.enumeration.GemType.SKILL_ALB;
@@ -197,43 +196,7 @@ public enum Gem {
 						.orElse ( null );
 	}
 
-	public static String[] getAlbSkills () {
-		return getByTypeHelper ( SKILL_ALB, SKILL_ALL );
-	}
-
-	public static String[] getHibSkills () {
-		return getByTypeHelper ( SKILL_HIB, SKILL_ALL );
-	}
-
-	public static String[] getMidSkills () {
-		return getByTypeHelper ( SKILL_MID, SKILL_ALL );
-	}
-
-	public static String[] getAlbFocus () {
-		return getByTypeHelper ( FOCUS_ALB, UNSET );
-	}
-
-	public static String[] getHibFocus () {
-		return getByTypeHelper ( FOCUS_HIB, UNSET );
-	}
-
-	public static String[] getMidFocus () {
-		return getByTypeHelper ( FOCUS_MID, UNSET );
-	}
-
-	public static String[] getResists () {
-		return getByTypeHelper ( RESIST );
-	}
-
-	public static String[] getStats () {
-		return getByTypeHelper ( STAT );
-	}
-
-	public static String[] getHits () {
-		return getByTypeHelper ( HITS );
-	}
-
-	private static String[] getByTypeHelper ( GemType... types ) {
+	public static String[] getByType ( GemType... types ) {
 		return Arrays.stream ( Gem.values () )
 						.filter ( gem -> Arrays.asList ( types ).contains ( gem.type ) )
 						.map ( gem -> gem.name )
