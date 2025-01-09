@@ -66,7 +66,7 @@ public class GemService {
 			}
 			default -> focuses;
 		};
-		for ( var name : Stream.of ( skills, focuses, Gem.getByType ( RESIST, STAT, HITS) ).flatMap ( Stream::of ).toArray ( String[]::new ) ) {
+		for ( var name : Stream.of ( skills, focuses, Gem.getByType ( RESIST, STAT, HITS ) ).flatMap ( Stream::of ).toArray ( String[]::new ) ) {
 			if ( find ( line, name ) ) {
 				Log.infof ( "Line: \"%s\" contains word: \"%s\"", line, name );
 				return new GemModel ( realm, strength, Gem.getByName ( name ) );
@@ -76,9 +76,6 @@ public class GemService {
 	}
 
 	private boolean find ( String line, String word ) {
-		var regex = "\\b" + Pattern.quote ( word ) + "\\b";
-		var pattern = Pattern.compile ( regex, Pattern.CASE_INSENSITIVE );
-		var matcher = pattern.matcher ( line );
-		return matcher.find ();
+		return Pattern.compile ( "\\b" + Pattern.quote ( word ) + "\\b", Pattern.CASE_INSENSITIVE ).matcher ( line ).find ();
 	}
 }
