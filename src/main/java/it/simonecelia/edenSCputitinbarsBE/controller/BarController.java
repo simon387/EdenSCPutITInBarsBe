@@ -28,9 +28,10 @@ public class BarController {
 					@QueryParam ( "realm" ) Realm realm,
 					@QueryParam ( "character" ) String character,
 					@QueryParam ( "gems" ) Integer gems,
+					@QueryParam ( "user" ) String user,
 					String payload ) throws IOException {
 		Log.infof ( "Calling newBar, realm = %s, character = %s, gems = %d", realm, character, gems );
-		barService.newBar ( realm, character, gems, payload );
+		barService.newBar ( realm, character, gems, user, payload );
 		return Response.status ( Response.Status.CREATED ).build ();
 	}
 }

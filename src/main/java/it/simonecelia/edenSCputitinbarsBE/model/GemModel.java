@@ -21,6 +21,14 @@ public class GemModel {
 
 	private final Gem gem;
 
+	public GemModel () {
+		this.realm = null;
+		this.strength = null;
+		this.id = 0;
+		this.imbue = 0;
+		this.gem = null;
+	}
+
 	public GemModel ( Realm realm, String strength, Gem gem ) {
 		this.realm = realm;
 		this.strength = GemStrength.fromName ( strength );
