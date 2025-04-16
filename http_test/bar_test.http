@@ -1,4 +1,4 @@
-POST {{baseUrl}}bar?realm=ALBION&gems=12&user=Thinkopen
+POST {{baseUrl}}bar?realm=ALBION&user=Thinkopen
 Content-Type: text/plain
 Accept: application/json
 

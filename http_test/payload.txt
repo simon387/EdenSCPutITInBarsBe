@@ -1,30 +1,60 @@
-1. (Stat) Intelligence: +28 [(Perfect) Dusty Essence Jewel]
-2. (Resist) Crush: +9% [(Polished) Fiery Shielding Jewel]
-3. (Resist) Thrust: +7% [(Imperfect) Airy Shielding Jewel]
-4. (Resist) Matter: +5% [(Flawed) Earthen Shielding Jewel]
+Hands:
+Imbue Points: 37,5 of 37,5  (Quality: 99)
+Gem 1: (Rough) Molten Magma War Sigil
+        (Skill) Flexible: +3
+
+Gem 2: (Precious) Watery Essence Jewel
+        (Stat) Piety: +22
+
+Gem 3: (Flawless) Airy Essence Jewel
+        (Stat) Quickness: +25
+
+Gem 4: (Polished) Light Shielding Jewel
+        (Resist) Energy: +9%
 
 
+Arms:
+Imbue Points: 37,5 of 37,5  (Quality: 99)
+Gem 1: (Flawed) Blood Essence Jewel
+        (Stat) Hit Points: +28
 
-Arms
-Name: Sigil Sewn Cloth
-Level: 51 (99% Quality)
-Utility: 56,34
-Source Type: Spellcraft
-Imbue Points: 37 of 37,5
-1. (Stat) Dexterity: +13 [(Imperfect) Vapor Essence Jewel]
-2. (Stat) Intelligence: +28 [(Perfect) Dusty Essence Jewel]
-3. (Stat) Hit Points: +76 [(Perfect) Blood Essence Jewel]
-4. (Resist) Body: +5% [(Flawed) Dusty Shielding Jewel]
+Gem 2: (Polished) Watery Shielding Jewel
+        (Resist) Slash: +9%
+
+Gem 3: (Polished) Fiery Battle Jewel
+        (Skill) Shield: +6
+
+Gem 4: (Uncut) Icy Shielding Jewel
+        (Resist) Cold: +2%
 
 
+Feet:
+Imbue Points: 37,5 of 37,5  (Quality: 99)
+Gem 1: (Perfect) Watery Essence Jewel
+        (Stat) Piety: +28
 
-Legs
-Name: Sigil Stiched Cloth
-Level: 51 (99% Quality)
-Utility: 60,67
-Source Type: Spellcraft
-Imbue Points: 37,5 of 37,5
-1. (Stat) Intelligence: +10 [(Flawed) Dusty Essence Jewel]
-2. (Resist) Heat: +11% [(Faceted) Heated Shielding Jewel]
-3. (Resist) Matter: +7% [(Imperfect) Earthen Shielding Jewel]
-4. (Resist) Spirit: +9% [(Polished) Vapor Shielding Jewel]
+Gem 2: (Flawless) Airy Essence Jewel
+        (Stat) Quickness: +25
+
+Gem 3: (Imperfect) Vapor Essence Jewel
+        (Stat) Dexterity: +13
+
+Gem 4: (Polished) Blood Essence Jewel
+        (Stat) Hit Points: +44
+
+
+Legs:
+Imbue Points: 37,5 of 37,5  (Quality: 99)
+Gem 1: (Faceted) Fiery Essence Jewel
+        (Stat) Strength: +19
+
+Gem 2: (Perfect) Earthen Essence Jewel
+        (Stat) Constitution: +28
+
+Gem 3: (Faceted) Vapor Essence Jewel
+        (Stat) Dexterity: +19
+
+Gem 4: (Polished) Blood Essence Jewel
+        (Stat) Hit Points: +44
+
+
