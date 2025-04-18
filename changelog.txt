@@ -1,3 +1,6 @@
+Version 1.0.2
++ no spacer on first slot
+
 Version 1.0.1
 + added user parameter
 + added bar spacers

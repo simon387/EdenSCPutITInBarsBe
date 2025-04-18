@@ -74,7 +74,9 @@ public class BarService {
 				} else {
 					pieces++;
 					pieceImbue = 0;
-					addSpacer ( gemsToWrite );
+					if ( i != 0 ) {
+						addSpacer ( gemsToWrite );
+					}
 				}
 			} else if ( gems.size () % 4 == 0 && i % 4 == 0 ) {
 				addSpacer ( gemsToWrite );
