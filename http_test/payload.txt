@@ -1,60 +1,20 @@
-Hands:
-Imbue Points: 37,5 of 37,5  (Quality: 99)
-Gem 1: (Rough) Molten Magma War Sigil
-        (Skill) Flexible: +3
+Hands  + 10 AF (sigil stitched)
+Imbue Points: 37 of 37.5
+1. (Stat) Piety: +7 [(Rough) Watery Essence Jewel]
+2. (H.P.) Hit Points: +68 [(Flawless) Blood Essence Jewel]
+3. (Resist) Slash: +7% [(Imperfect) Watery Shielding Jewel]
+4. (Skill) Shield: +5 [(Imperfect) Fiery Battle Jewel]
 
-Gem 2: (Precious) Watery Essence Jewel
-        (Stat) Piety: +22
+Feet (Stat Cap) Cap Dexterity: +5 (sigil stitched)
+Imbue Points: 36 of 37.5
+1. (H.P.) Hit Points: +52 [(Faceted) Blood Essence Jewel]
+2. (Resist) Slash: +9% [(Polished) Watery Shielding Jewel]
+3. (Resist) Thrust: +7% [(Imperfect) Airy Shielding Jewel]
+4. (Skill) Shield: +4 [(Flawed) Fiery Battle Jewel]
 
-Gem 3: (Flawless) Airy Essence Jewel
-        (Stat) Quickness: +25
-
-Gem 4: (Polished) Light Shielding Jewel
-        (Resist) Energy: +9%
-
-
-Arms:
-Imbue Points: 37,5 of 37,5  (Quality: 99)
-Gem 1: (Flawed) Blood Essence Jewel
-        (Stat) Hit Points: +28
-
-Gem 2: (Polished) Watery Shielding Jewel
-        (Resist) Slash: +9%
-
-Gem 3: (Polished) Fiery Battle Jewel
-        (Skill) Shield: +6
-
-Gem 4: (Uncut) Icy Shielding Jewel
-        (Resist) Cold: +2%
-
-
-Feet:
-Imbue Points: 37,5 of 37,5  (Quality: 99)
-Gem 1: (Perfect) Watery Essence Jewel
-        (Stat) Piety: +28
-
-Gem 2: (Flawless) Airy Essence Jewel
-        (Stat) Quickness: +25
-
-Gem 3: (Imperfect) Vapor Essence Jewel
-        (Stat) Dexterity: +13
-
-Gem 4: (Polished) Blood Essence Jewel
-        (Stat) Hit Points: +44
-
-
-Legs:
-Imbue Points: 37,5 of 37,5  (Quality: 99)
-Gem 1: (Faceted) Fiery Essence Jewel
-        (Stat) Strength: +19
-
-Gem 2: (Perfect) Earthen Essence Jewel
-        (Stat) Constitution: +28
-
-Gem 3: (Faceted) Vapor Essence Jewel
-        (Stat) Dexterity: +19
-
-Gem 4: (Polished) Blood Essence Jewel
-        (Stat) Hit Points: +44
-
-
+Legs (Bonus Cap) Power Pool: +5 (sigil stitched)
+Imbue Points: 34.5 of 37.5
+1. (Resist) Matter: +9% [(Polished) Earthen Shielding Jewel]
+2. (Resist) Body: +7% [(Imperfect) Dusty Shielding Jewel]
+3. (Resist) Energy: +7% [(Imperfect) Light Shielding Jewel]
+4. (Stat) Dexterity: +19 [(Faceted) Vapor Essence Jewel]
