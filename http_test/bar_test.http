@@ -1,4 +1,4 @@
-POST {{baseUrl}}bar?realm=ALBION&user=Thinkopen&character=bmwskrr
+POST {{baseUrl}}bar?realm=ALBION&user=Thinkopen&character=Rayvsx
 Content-Type: text/plain
 Accept: application/json
 

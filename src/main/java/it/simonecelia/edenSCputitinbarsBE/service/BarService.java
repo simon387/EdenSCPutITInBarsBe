@@ -90,7 +90,7 @@ public class BarService {
 			}
 			writeSlot ( i + pieces + offset, "45," + gemsToWrite.get ( i ).getId () );
 		}
-		Log.infof ( "Writing Gem to: %s", iniFile );
+		Log.infof ( "Writing %d Gems to: %s", gems.size (), iniFile );
 		ini.store ();
 	}
 

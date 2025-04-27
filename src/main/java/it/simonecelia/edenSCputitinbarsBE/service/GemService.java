@@ -38,8 +38,11 @@ public class GemService {
 				if ( find ( line, gemStrength ) ) {
 					gemsFound++;
 					Log.infof ( "Line: \"%s\" contains word: \"%s\"", line, gemStrength );
-					gems.add ( getGem ( realm, line, gemStrength ) );
-					break;
+					var gem = getGem ( realm, line, gemStrength );
+					if ( null != gem ) {
+						gems.add ( getGem ( realm, line, gemStrength ) );
+						break;
+					}
 				}
 			}
 			if ( !ignoreGemsNumber && ( gemsFound == gemsNumber ) ) {
@@ -52,6 +55,7 @@ public class GemService {
 		return gems;
 	}
 
+	// if returns null, it means that the line does not contain any gem
 	private GemModel getGem ( Realm realm, String line, String strength ) {
 		var skills = Gem.getByType ( SKILL_ALB, SKILL_ALL );
 		var focuses = Gem.getByType ( FOCUS_ALB, UNSET );
@@ -72,7 +76,8 @@ public class GemService {
 				return new GemModel ( realm, strength, Gem.getByName ( name ) );
 			}
 		}
-		throw new RuntimeException ( "GemModel not found! Line: " + line );
+		Log.infof ( "GemModel not found! Line: ", line );
+		return null;
 	}
 
 	private boolean find ( String line, String word ) {
