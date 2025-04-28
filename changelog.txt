@@ -1,12 +1,12 @@
 Version 1.0.3
-+ fixed parser bug
-+ added logs
+- fixed parser bug
+- added logs
 
 Version 1.0.2
-+ no spacer on first slot
+- no spacer on first slot
 
 Version 1.0.1
-+ added user parameter
-+ added bar spacers
+- added user parameter
+- added bar spacers
 
 Version 1.0.0 Alpha
