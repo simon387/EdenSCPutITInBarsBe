@@ -1,53 +1,17 @@
+Hands - Dragonsworn Bespelled Woven  - 5. (Stat) Constitution: +15
+1. (Resist) Slash: +9% [(Polished) Watery Shielding Jewel]
+2. (Stat) Intelligence: +28 [(Perfect) Dusty Essence Jewel]
+3. (Stat) Dexterity: +16 [(Polished) Vapor Essence Jewel]
+4. (Resist) Crush: +5% [(Flawed) Fiery Shielding Jewel]
 
-Imbue Points: 37 of 37,5
-1. (Stat) Quickness: +25 [(Flawless) Airy Essence Jewel]
-2. (Resist) Spirit: +9% [(Polished) Vapor Shielding Jewel]
-3. (Resist) Matter: +7% [(Imperfect) Earthen Shielding Jewel]
-4. (Resist) Slash: +7% [(Imperfect) Watery Shielding Jewel]
-5. (Stat_Cap) Cap Dexterity: +5 [(Raw) Not Found]
+Arms - Dragonsworn Spell Riddled Woven - Healing: +5
+1. (Stat) Intelligence: +28 [(Perfect) Dusty Essence Jewel]
+2. (Resist) Thrust: +5% [(Flawed) Airy Shielding Jewel]
+3. (Stat) Constitution: +19 [(Faceted) Earthen Essence Jewel]
+4. (Resist) Crush: +9% [(Polished) Fiery Shielding Jewel]
 
-
-Torso
-Name: Azure Prayerbound Robe
-Level: 51 (100% Quality)
-Utility: 131
-Source Type: Loot
-1. (Stat) Dexterity: +18
-2. (Resist) Crush: +2%
-3. (Resist) Slash: +2%
-4. (Resist) Thrust: +2%
-5. (Skill) Staff: +3
-6. (Bonus) Armor Factor: +10
-7. (Bonus) Melee Damage: +5
-8. (Bonus) Healing: +10
-9. (Bonus) Style Damage: +5
-10. (Stat_Cap) Cap Dexterity: +6
-
-
-Arms
-Name: Sleeves of Decaying Flesh
-Level: 51 (100% Quality)
-Utility: 128
-Source Type: Loot
-1. (Stat) Dexterity: +21
-2. (Stat) Quickness: +21
-3. (Resist) Crush: +5%
-4. (Resist) Slash: +5%
-5. (Resist) Thrust: +5%
-6. (Bonus) Melee Speed: +4
-7. (Skill) All Melee Skills: +3
-8. (Bonus) Melee Damage: +4
-
-
-Feet
-Name: 
-Level: 51 (99% Quality)
-Utility: 70,34
-Source Type: Spellcraft
-Imbue Points: 37 of 37,5
-1. (Stat) Constitution: +19 [(Faceted) Earthen Essence Jewel]
-2. (Resist) Thrust: +7% [(Imperfect) Airy Shielding Jewel]
-3. (Stat) Dexterity: +13 [(Imperfect) Vapor Essence Jewel]
-4. (Skill) Parry: +5 [(Imperfect) Vapor Battle Jewel]
-5. (Bonus) Armor Factor: +10 [(Raw) Not Found]
-
+Feet - Bespelled Woven (Aerus) - Cap Dexterity: +5
+1. (Stat) Intelligence: +22 [(Precious) Dusty Essence Jewel]
+2. (Resist) Cold: +2% [(Uncut) Icy Shielding Jewel]
+3. (Stat) Power: +13 [(Precious) Mystical Essence Jewel]
+4. (Resist) Slash: +5% [(Flawed) Watery Shielding Jewel]
