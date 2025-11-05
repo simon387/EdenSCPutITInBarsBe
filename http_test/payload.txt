@@ -1,20 +1,21 @@
-1. (Resist) Heat: +7% [(Imperfect) Heated Shielding Jewel]
-2. (Resist) Matter: +7% [(Imperfect) Earthen Shielding Jewel]
-3. (Stat) Constitution: +25 [(Flawless) Earthen Essence Jewel]
-4. (Stat) Hit Points: +68 [(Flawless) Blood Essence Jewel]
-5. (Stat_Cap) Cap Constitution: +5 [(Raw) Not Found]
-
-Hands - Embroidered Cruaigh (Aerus)
-Imbue Points: 37 of 37,5
-1. (Resist) Matter: +5% [(Flawed) Earthen Shielding Jewel]
-2. (Stat) Constitution: +19 [(Faceted) Earthen Essence Jewel]
-3. (Stat) Quickness: +28 [(Perfect) Airy Essence Jewel]
-4. (Stat) Hit Points: +60 [(Precious) Blood Essence Jewel]
-5. (Stat_Cap) Cap Dexterity: +5 [(Raw) Not Found]
-
-Right Hand
+Hands
+Name:
+Level: 51 (99% Quality)
+Utility: 61,34
+Source Type: Spellcraft
 Imbue Points: 37,5 of 37,5
-1. (Stat) Constitution: +16 [(Polished) Earthen Essence Jewel]
-2. (Stat) Dexterity: +28 [(Perfect) Vapor Essence Jewel]
-3. (Stat) Quickness: +28 [(Perfect) Airy Essence Jewel]
-4. (Stat) Hit Points: +28 [(Flawed) Blood Essence Jewel]
+(Resist) Cold: +7% [(Imperfect) Icy Shielding Jewel]
+(Stat) Constitution: +25 [(Flawless) Earthen Essence Jewel]
+(Stat) Dexterity: +25 [(Flawless) Vapor Essence Jewel]
+(Resist) Slash: +7% [(Imperfect) Watery Shielding Jewel]
+
+
+Level: 51 (99% Quality)
+Utility: 72
+Source Type: Spellcraft
+Imbue Points: 37 of 37,5
+(Resist) Crush: +7% [(Imperfect) Fiery Shielding Jewel]
+(Skill) Shield: +4 [(Flawed) Fiery Battle Jewel]
+(Skill) Parry: +4 [(Flawed) Vapor Battle Jewel]
+(Resist) Body: +9% [(Polished) Dusty Shielding Jewel]
+
