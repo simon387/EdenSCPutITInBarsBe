@@ -1,21 +1,15 @@
-Hands
-Name:
-Level: 51 (99% Quality)
-Utility: 61,34
-Source Type: Spellcraft
-Imbue Points: 37,5 of 37,5
-(Resist) Cold: +7% [(Imperfect) Icy Shielding Jewel]
-(Stat) Constitution: +25 [(Flawless) Earthen Essence Jewel]
-(Stat) Dexterity: +25 [(Flawless) Vapor Essence Jewel]
-(Resist) Slash: +7% [(Imperfect) Watery Shielding Jewel]
-
-
-Level: 51 (99% Quality)
-Utility: 72
-Source Type: Spellcraft
-Imbue Points: 37 of 37,5
-(Resist) Crush: +7% [(Imperfect) Fiery Shielding Jewel]
-(Skill) Shield: +4 [(Flawed) Fiery Battle Jewel]
-(Skill) Parry: +4 [(Flawed) Vapor Battle Jewel]
-(Resist) Body: +9% [(Polished) Dusty Shielding Jewel]
-
+Jambes
+   Flawless Vapor Essence Jewel
+   Faceted Blood Essence Jewel
+   Precious Heated Essence Jewel
+   Imperfect Light Shielding Jewel
+Mains
+   Faceted Vapor Shielding Jewel
+   Faceted Earthen Essence Jewel
+   Faceted Vapor Essence Jewel
+   Imperfect Blood Essence Jewel
+Pieds
+   Faceted Heated Shielding Jewel
+   Imperfect Earthen Essence Jewel
+   Flawless Vapor Essence Jewel
+   Imperfect Blood Essence Jewel
