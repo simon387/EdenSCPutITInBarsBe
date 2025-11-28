@@ -1,6 +1,32 @@
-Hands - Dragonsworn Bespelled Woven  - 5. (Stat) Constitution: +15
-1. (Resist) Slash: +9% [(Polished) Watery Shielding Jewel]
-2. (Stat) Intelligence: +28 [(Perfect) Dusty Essence Jewel]
-3. (Stat) Dexterity: +16 [(Polished) Vapor Essence Jewel]
-4. (Resist) Crush: +5% [(Flawed) Fiery Shielding Jewel]
+Legs
+Imbue: 37.5/32 (Quality: 99)
+Imperfect Vapor Essence Jewel (Dexterity: 13)
+	Pal Gem: 1, Essence of Life: 17, Swamp Fog: 5
+Uncut Fiery Shielding Jewel (Crush: 2%)
+	Um Gem: 1, Ground Draconic Scales: 6, Draconic Fire: 2
+Precious Watery Shielding Jewel (Slash: 13%)
+	Zo Gem: 1, Ground Draconic Scales: 36, Leviathan Blood: 8
+Polished Light Shielding Jewel (Energy: 9%)
+	Mon Gem: 1, Ground Draconic Scales: 26, Sun Light: 6
 
+Hands
+Imbue: 37.5/32 (Quality: 99)
+Polished Earthen Shielding Jewel (Matter: 9%)
+	Mon Gem: 1, Ground Draconic Scales: 26, Treant Blood: 6
+Flawless Blood Essence Jewel (Hits: 68)
+	Kath Gem: 1, Essence of Life: 33, Giant Blood: 9
+Flawless Vapor Essence Jewel (Dexterity: 25)
+	Kath Gem: 1, Essence of Life: 33, Swamp Fog: 9
+Flawed Airy Shielding Jewel (Thrust: 5%)
+	Ee Gem: 1, Ground Draconic Scales: 16, Air Elemental Essence: 4
+
+Feet
+Imbue: 37.5/32 (Quality: 99)
+Polished Earthen Shielding Jewel (Matter: 9%)
+	Mon Gem: 1, Ground Draconic Scales: 26, Treant Blood: 6
+Precious Vapor Essence Jewel (Dexterity: 22)
+	Zo Gem: 1, Essence of Life: 29, Swamp Fog: 8
+Imperfect Light Shielding Jewel (Energy: 7%)
+	Pal Gem: 1, Ground Draconic Scales: 21, Sun Light: 5
+Polished Vapor Shielding Jewel (Spirit: 9%)
+	Mon Gem: 1, Ground Draconic Scales: 26, Swamp Fog: 6
