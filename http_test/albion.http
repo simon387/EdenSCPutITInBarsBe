@@ -1,0 +1,5 @@
+POST {{baseUrl}}bar?realm=ALBION&user=Simon&character=Porcodiosos
+Content-Type: text/plain
+Accept: application/json
+
+< payload.txt
