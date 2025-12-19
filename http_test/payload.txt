@@ -1,38 +1,25 @@
+1. (Resist) Slash: +9% [(Polished) Watery Shielding Jewel]
+2. (Resist) Body: +9% [(Polished) Dusty Shielding Jewel]
+3. (Stat) Charisma: +25 [(Flawless) Icy Essence Jewel]
+4. (H.P.) Hit Points: +36 [(Imperfect) Blood Essence Jewel]
 
-Arms
-Name:
-Level: 51 (100% Quality)
-Utility: 61
-Source Type: Spellcraft
-Imbue Points: 37 of 37.5
-1. (H.P.) Hit Points: +76 [(Perfect) Blood Essence Jewel]
-2. (Resist) Slash: +9% [(Polished) Watery Shielding Jewel]
-3. (Resist) Heat: +5% [(Flawed) Heated Shielding Jewel]
-4. (Resist) Matter: +7% [(Imperfect) Earthen Shielding Jewel]
+Arms (Stat Cap) Cap Hit Points: +40 - Ornamented Cailocht (Volc)
+Imbue Points: 37,5 of 33,5
+1. (Resist) Slash: +9% [(Polished) Watery Shielding Jewel]
+2. (Resist) Thrust: +9% [(Polished) Airy Shielding Jewel]
+3. (Resist) Energy: +7% [(Imperfect) Light Shielding Jewel]
+4. (H.P.) Hit Points: +60 [(Precious) Blood Essence Jewel]
 
+Feet (Stat) Dexterity: +15 - Dragonsworn Blazed Cailocht
+Imbue Points: 36 of 33,5
+1. (Resist) Cold: +11% [(Faceted) Icy Shielding Jewel]
+2. (Resist) Body: +7% [(Imperfect) Dusty Shielding Jewel]
+3. (Resist) Heat: +7% [(Imperfect) Heated Shielding Jewel]
+4. (Power) Power: +5 [(Flawed) Mystical Essence Jewel]
 
-Feet
-Name:
-Level: 51 (100% Quality)
-Utility: 47.33
-Source Type: Spellcraft
-Imbue Points: 36 of 37.5
-1. (Stat) Constitution: +10 [(Flawed) Earthen Essence Jewel]
-2. (Stat) Piety: +10 [(Flawed) Watery Essence Jewel]
-3. (Resist) Matter: +2% [(Uncut) Earthen Shielding Jewel]
-4. (Resist) Body: +15% [(Flawless) Dusty Shielding Jewel]
-
-
-
-Left Hand
-Name:
-Level: 51 (100% Quality)
-Utility: 53.66
-Source Type: Spellcraft
-Imbue Points: 37 of 37.5
-1. (Power) Power: +7 [(Imperfect) Mystical Essence Jewel]
-2. (Resist) Slash: +5% [(Flawed) Watery Shielding Jewel]
-3. (Stat) Constitution: +28 [(Perfect) Earthen Essence Jewel]
-4. (Resist) Energy: +9% [(Polished) Light Shielding Jewel]
-
-
+Legs +5 power pool, non so se funzioneranno - Blazed Cailocht (armor pattern)
+Imbue Points: 37,5 of 33,5
+1. (Resist) Slash: +7% [(Imperfect) Watery Shielding Jewel]
+2. (Resist) Crush: +11% [(Faceted) Fiery Shielding Jewel]
+3. (Resist) Spirit: +7% [(Imperfect) Vapor Shielding Jewel]
+4. (Stat) Constitution: +16 [(Polished) Earthen Essence Jewel]
