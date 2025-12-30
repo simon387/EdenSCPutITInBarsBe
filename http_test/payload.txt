@@ -1,41 +1,33 @@
-
-
-Helmet
-Name: dragonsworn etched
-Level: 51 (99% Quality)
-Utility: 71
 Source Type: Spellcraft
 Imbue Points: 37,5 of 37,5
-1. (Resist) Crush: +5% [(Flawed) Fiery Shielding Jewel]
-2. (Resist) Thrust: +11% [(Faceted) Airy Shielding Jewel]
-3. (Resist) Body: +5% [(Flawed) Dusty Shielding Jewel]
-4. (Stat) Hit Points: +76 [(Perfect) Blood Essence Jewel]
-5. (Stat) Constitution: +15 [(?) Earthen Essence Jewel]
-
-
-Hands
-Name: spell marked
-Level: 51 (99% Quality)
-Utility: 74
-Source Type: Spellcraft
-Imbue Points: 36,5 of 37,5
-1. (Resist) Slash: +7% [(Imperfect) Watery Shielding Jewel]
-2. (Resist) Energy: +7% [(Imperfect) Light Shielding Jewel]
-3. (Resist) Matter: +13% [(Precious) Earthen Shielding Jewel]
+1. (Resist) Heat: +13% [(Precious) Heated Shielding Jewel]
+2. (Resist) Spirit: +7% [(Imperfect) Vapor Shielding Jewel]
+3. (H.P.) Hit Points: +52 [(Faceted) Blood Essence Jewel]
 4. (Skill) All Magic Skills: +1 [(Raw) Finesse Nature Spell Stone]
-5. (Bonus) Buff: +5 [(Raw) Not Found]
 
 
 
 
 Arms
-Name: spell marked
-Level: 51 (99% Quality)
-Utility: 70,67
+Name: Bespelled Woven (Aerus)
+Level: 51 (100% Quality)
+Utility: 61,33
 Source Type: Spellcraft
 Imbue Points: 37,5 of 37,5
-1. (Resist) Slash: +9% [(Polished) Watery Shielding Jewel]
-2. (Resist) Energy: +11% [(Faceted) Light Shielding Jewel]
-3. (Resist) Spirit: +9% [(Polished) Vapor Shielding Jewel]
-4. (Stat) Dexterity: +4 [(Uncut) Vapor Essence Jewel]
-5. (Bonus) Healing: +5 [(Raw) Not Found]
+1. (Resist) Body: +7% [(Imperfect) Dusty Shielding Jewel]
+2. (Stat) Intelligence: +25 [(Flawless) Dusty Essence Jewel]
+3. (Resist) Slash: +7% [(Imperfect) Watery Shielding Jewel]
+4. (Stat) Strength: +25 [(Flawless) Fiery Essence Jewel]
+
+
+
+Legs
+Name: Dragonsworn Enchanted Woven
+Level: 51 (100% Quality)
+Utility: 60,66
+Source Type: Spellcraft
+Imbue Points: 35,5 of 37,5
+1. (Resist) Body: +9% [(Polished) Dusty Shielding Jewel]
+2. (Stat) Intelligence: +22 [(Precious) Dusty Essence Jewel]
+3. (Resist) Crush: +5% [(Flawed) Fiery Shielding Jewel]
+4. (Resist) Cold: +9% [(Polished) Icy Shielding Jewel]
