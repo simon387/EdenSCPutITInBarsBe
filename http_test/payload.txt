@@ -1,10 +1,14 @@
+
+Hands
+Name: Bespelled Woven (Aerus) +5 con cap
+Level: 51 (100% Quality)
+Utility: 58
 Source Type: Spellcraft
 Imbue Points: 37,5 of 37,5
 1. (Resist) Heat: +13% [(Precious) Heated Shielding Jewel]
 2. (Resist) Spirit: +7% [(Imperfect) Vapor Shielding Jewel]
 3. (H.P.) Hit Points: +52 [(Faceted) Blood Essence Jewel]
 4. (Skill) All Magic Skills: +1 [(Raw) Finesse Nature Spell Stone]
-
 
 
 
@@ -18,8 +22,7 @@ Imbue Points: 37,5 of 37,5
 2. (Stat) Intelligence: +25 [(Flawless) Dusty Essence Jewel]
 3. (Resist) Slash: +7% [(Imperfect) Watery Shielding Jewel]
 4. (Stat) Strength: +25 [(Flawless) Fiery Essence Jewel]
-
-
+1. (Stat Cap) Cap Hit Points: +40
 
 Legs
 Name: Dragonsworn Enchanted Woven
@@ -31,3 +34,5 @@ Imbue Points: 35,5 of 37,5
 2. (Stat) Intelligence: +22 [(Precious) Dusty Essence Jewel]
 3. (Resist) Crush: +5% [(Flawed) Fiery Shielding Jewel]
 4. (Resist) Cold: +9% [(Polished) Icy Shielding Jewel]
+2. (Stat) Strength: +15
+
