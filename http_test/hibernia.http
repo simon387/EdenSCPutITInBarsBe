@@ -1,0 +1,5 @@
+POST {{baseUrl}}bar?realm=HIBERNIA&user=Simon&character=Porcodio
+Content-Type: text/plain
+Accept: application/json
+
+< payload.txt
