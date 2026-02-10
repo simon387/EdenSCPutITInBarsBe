@@ -1,27 +1,18 @@
-Helmet - Blazed Cailocht (Volc)	5 Acu Cap
+1. (Skill) Body: +3 [(Rough) dusty shielding jewel]
+2. (Stat) Dexterity: +28 [(Perfect) Vapor Essence Jewel]
+3. (Resist) Cold: +9% [(Polished) Icy Shielding Jewel]
+4. (Stat) Quickness: +7 [(Rough) Airy Essence Jewel]
+5. (Stat) Quickness: +15 [(?) Airy Essence Jewel]
+
+
+Feet
+Name: Dragonsworn Ornamented Cailocht
+Level: 51 (99% Quality)
+Utility: 70,01
+Source Type: Spellcraft
 Imbue Points: 37,5 of 37,5
-1. (Resist) Matter: +9% [(Polished) Earthen Shielding Jewel]
-2. (Resist) Body: +5% [(Flawed) Dusty Shielding Jewel]
-3. (Resist) Energy: +11% [(Faceted) Light Shielding Jewel]
-4. (Stat) Constitution: +16 [(Polished) Earthen Essence Jewel]
-
-Hands - Dragonsworn Blazed Cailocht - 5% Heal
-Imbue Points: 37 of 37,5
-1. (H.P.) Hit Points: +68 [(Flawless) Blood Essence Jewel]
-2. (Resist) Thrust: +7% [(Imperfect) Airy Shielding Jewel]
-3. (Resist) Slash: +7% [(Imperfect) Watery Shielding Jewel]
-4. (Resist) Spirit: +9% [(Polished) Vapor Shielding Jewel]
-
-Arms - Ornamented Cailocht (Volc) Cap Hit Points: +40
-Imbue Points: 37 of 37,5
-1. (Stat) Constitution: +19 [(Faceted) Earthen Essence Jewel]
-2. (Stat) Dexterity: +19 [(Faceted) Vapor Essence Jewel]
-3. (Resist) Slash: +11% [(Faceted) Watery Shielding Jewel]
-4. (Resist) Matter: +5% [(Flawed) Earthen Shielding Jewel]
-
-Feet - 2. Blazed Cailocht (Volc) 5 Dex Cap
-Imbue Points: 37 of 37,5
-1. (Stat) Strength: +22 [(Precious) Fiery Essence Jewel]
-2. (H.P.) Hit Points: +36 [(Imperfect) Blood Essence Jewel]
-3. (Power) Power: +13 [(Precious) Mystical Essence Jewel]
-4. (Resist) Crush: +2% [(Uncut) Fiery Shielding Jewel]
+1. (Skill)  : +4 [(Uncut) heated shielding jewel]
+2. (Stat) Dexterity: +16 [(Polished) Vapor Essence Jewel]
+3. (Stat) Strength: +16 [(Polished) Fiery Essence Jewel]
+4. (Stat) Constitution: +28 [(Perfect) Earthen Essence Jewel]
+5. (Stat) Constitution: +15 [(?) Earthen Essence Jewel]
