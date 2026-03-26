@@ -1,18 +1,41 @@
-1. (Skill) Body: +3 [(Rough) dusty shielding jewel]
-2. (Stat) Dexterity: +28 [(Perfect) Vapor Essence Jewel]
-3. (Resist) Cold: +9% [(Polished) Icy Shielding Jewel]
-4. (Stat) Quickness: +7 [(Rough) Airy Essence Jewel]
-5. (Stat) Quickness: +15 [(?) Airy Essence Jewel]
 
 
-Feet
-Name: Dragonsworn Ornamented Cailocht
-Level: 51 (99% Quality)
-Utility: 70,01
+
+
+Name:
+Level: 51 (100% Quality)
+Utility: 63
+Source Type: Spellcraft
+Imbue Points: 37 of 37,5
+1. (Resist) Heat: +13% [(Precious) Heated Shielding Jewel]
+2. (Resist) Spirit: +7% [(Imperfect) Vapor Shielding Jewel]
+3. (Stat) Hit Points: +52 [(Faceted) Blood Essence Jewel]
+4. (Skill) All Magic Skills: +1 [(Raw) Finesse Nature Spell Stone]
+
+
+
+Arms
+Name:
+Level: 51 (100% Quality)
+Utility: 61,34
 Source Type: Spellcraft
 Imbue Points: 37,5 of 37,5
-1. (Skill)  : +4 [(Uncut) heated shielding jewel]
-2. (Stat) Dexterity: +16 [(Polished) Vapor Essence Jewel]
-3. (Stat) Strength: +16 [(Polished) Fiery Essence Jewel]
-4. (Stat) Constitution: +28 [(Perfect) Earthen Essence Jewel]
-5. (Stat) Constitution: +15 [(?) Earthen Essence Jewel]
+1. (Resist) Body: +7% [(Imperfect) Dusty Shielding Jewel]
+2. (Stat) Intelligence: +25 [(Flawless) Dusty Essence Jewel]
+3. (Resist) Slash: +7% [(Imperfect) Watery Shielding Jewel]
+4. (Stat) Strength: +25 [(Flawless) Fiery Essence Jewel]
+
+
+
+Legs
+Name:
+Level: 51 (100% Quality)
+Utility: 60,67
+Source Type: Spellcraft
+Imbue Points: 35,5 of 37,5
+1. (Resist) Body: +9% [(Polished) Dusty Shielding Jewel]
+2. (Stat) Intelligence: +22 [(Precious) Dusty Essence Jewel]
+3. (Resist) Crush: +5% [(Flawed) Fiery Shielding Jewel]
+4. (Resist) Cold: +9% [(Polished) Icy Shielding Jewel]
+
+
