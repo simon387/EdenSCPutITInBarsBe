@@ -1,0 +1,5 @@
+POST {{baseUrl}}bar?realm=MIDGARD&user=Simon&character=Rayvaughann
+Content-Type: text/plain
+Accept: application/json
+
+< payload.txt
