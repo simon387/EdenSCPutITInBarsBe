@@ -1,15 +1,33 @@
-HELMET: Rune Marked Starkakedja
-
-1. (Resist) Crush Resist: +11% (Faceted Fiery Shielding Jewel)
-2. (Hits) Hits: +52 (Faceted Blood Essence Jewel)
-3. (Resist) Slash Resist: +11% (Faceted Watery Shielding Jewel)
-4. (Resist) Body Resist: +1% (Raw Dusty Shielding Jewel)
-5. (5th Slot) +5 Con Cap: +5
-
-HANDS: Rune Scribed Starkakedja
-
-1. (Resist) Slash Resist: +9% (Polished Watery Shielding Jewel)
-2. (Resist) Thrust Resist: +9% (Polished Airy Shielding Jewel)
-3. (Stat) Dexterity: +22 (Precious Vapor Essence Jewel)
-4. (Resist) Energy Resist: +7% (Imperfect Light Shielding Jewel)
-5. (5th Slot (Bonus)) 5% Buff Effectiveness: +5%
+Legs
+Name:
+Level: 51 (100% Quality)
+Utility: 64,67
+Source Type: Spellcraft
+Imbue Points: 33 of 37,5
+(Stat) Dexterity: +25 [(Flawless) Vapor Essence Jewel]
+(Resist) Matter: +5% [(Flawed) Earthen Shielding Jewel]
+(Resist) Spirit: +5% [(Flawed) Vapor Shielding Jewel]
+(Resist) Energy: +9% [(Polished) Light Shielding Jewel]
+(Stat) Strength: +15 [(?) Fiery Essence Jewel]
+Hands
+Name:
+Level: 51 (100% Quality)
+Utility: 71,67
+Source Type: Spellcraft
+Imbue Points: 37,5 of 37,5
+(Stat) Dexterity: +25 [(Flawless) Vapor Essence Jewel]
+(Stat) Hit Points: +52 [(Faceted) Blood Essence Jewel]
+(Resist) Energy: +7% [(Imperfect) Light Shielding Jewel]
+(Resist) Matter: +9% [(Polished) Earthen Shielding Jewel]
+(Bonus) Buff: +5 [(Raw) Not Found]
+Helmet
+Name:
+Level: 51 (100% Quality)
+Utility: 67,67
+Source Type: Spellcraft
+Imbue Points: 37 of 37,5
+(Resist) Crush: +1% [(Raw) Fiery Shielding Jewel]
+(Resist) Heat: +9% [(Polished) Heated Shielding Jewel]
+(Stat) Piety: +28 [(Perfect) Watery Essence Jewel]
+(Stat) Hit Points: +76 [(Perfect) Blood Essence Jewel]
+(Stat_Cap) Cap Constitution: +5 [(Raw) Not Found]
