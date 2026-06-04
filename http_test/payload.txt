@@ -1,33 +1,33 @@
-Legs
-Name:
-Level: 51 (100% Quality)
-Utility: 64,67
-Source Type: Spellcraft
-Imbue Points: 33 of 37,5
-(Stat) Dexterity: +25 [(Flawless) Vapor Essence Jewel]
-(Resist) Matter: +5% [(Flawed) Earthen Shielding Jewel]
-(Resist) Spirit: +5% [(Flawed) Vapor Shielding Jewel]
-(Resist) Energy: +9% [(Polished) Light Shielding Jewel]
-(Stat) Strength: +15 [(?) Fiery Essence Jewel]
-Hands
-Name:
-Level: 51 (100% Quality)
-Utility: 71,67
-Source Type: Spellcraft
-Imbue Points: 37,5 of 37,5
-(Stat) Dexterity: +25 [(Flawless) Vapor Essence Jewel]
-(Stat) Hit Points: +52 [(Faceted) Blood Essence Jewel]
-(Resist) Energy: +7% [(Imperfect) Light Shielding Jewel]
-(Resist) Matter: +9% [(Polished) Earthen Shielding Jewel]
-(Bonus) Buff: +5 [(Raw) Not Found]
-Helmet
-Name:
-Level: 51 (100% Quality)
-Utility: 67,67
-Source Type: Spellcraft
-Imbue Points: 37 of 37,5
-(Resist) Crush: +1% [(Raw) Fiery Shielding Jewel]
-(Resist) Heat: +9% [(Polished) Heated Shielding Jewel]
-(Stat) Piety: +28 [(Perfect) Watery Essence Jewel]
-(Stat) Hit Points: +76 [(Perfect) Blood Essence Jewel]
-(Stat_Cap) Cap Constitution: +5 [(Raw) Not Found]
+LOKI Craft Report
+Chest:
+Imbue: 37.5/32 (Quality: 100)
+Gem 1: Rough Watery Shielding Jewel (3% Slash)
+	1 On Gem, 11 Ground Draconic Scales, 3 Leviathan Blood
+Gem 2: Faceted Watery Essence Jewel (19 Piety)
+	1 Ros Gem, 25 Essence of Life, 7 Leviathan Blood
+Gem 3: Uncut Airy Shielding Jewel (2% Thrust)
+	1 Um Gem, 6 Ground Draconic Scales, 2 Air Elemental Essence
+Gem 4: Flawless Dusty Shielding Jewel (15% Body)
+	1 Kath Gem, 41 Ground Draconic Scales, 9 Undead Ash and Holy Water
+
+Arms:
+Imbue: 37.5/32 (Quality: 100)
+Gem 1: Flawed Light Shielding Jewel (5% Energy)
+	1 Ee Gem, 16 Ground Draconic Scales, 4 Sun Light
+Gem 2: Flawless Vapor Essence Jewel (25 Dexterity)
+	1 Kath Gem, 33 Essence of Life, 9 Swamp Fog
+Gem 3: Flawless Watery Essence Jewel (25 Piety)
+	1 Kath Gem, 33 Essence of Life, 9 Leviathan Blood
+Gem 4: Polished Heated Shielding Jewel (9% Heat)
+	1 Mon Gem, 26 Ground Draconic Scales, 6 Heat From an Unearthly Pyre
+
+Head:
+Imbue: 37.5/32 (Quality: 100)
+Gem 1: Precious Watery Essence Jewel (22 Piety)
+	1 Zo Gem, 29 Essence of Life, 8 Leviathan Blood
+Gem 2: Polished Earthen Shielding Jewel (9% Matter)
+	1 Mon Gem, 26 Ground Draconic Scales, 6 Treant Blood
+Gem 3: Imperfect Icy Shielding Jewel (7% Cold)
+	1 Pal Gem, 21 Ground Draconic Scales, 5 Frost From a Wasteland
+Gem 4: Polished Vapor Shielding Jewel (9% Spirit)
+	1 Mon Gem, 26 Ground Draconic Scales, 6 Swamp Fog
