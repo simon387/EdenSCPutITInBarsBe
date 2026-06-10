@@ -1,33 +1,19 @@
-LOKI Craft Report
-Chest:
-Imbue: 37.5/32 (Quality: 100)
-Gem 1: Rough Watery Shielding Jewel (3% Slash)
-	1 On Gem, 11 Ground Draconic Scales, 3 Leviathan Blood
-Gem 2: Faceted Watery Essence Jewel (19 Piety)
-	1 Ros Gem, 25 Essence of Life, 7 Leviathan Blood
-Gem 3: Uncut Airy Shielding Jewel (2% Thrust)
-	1 Um Gem, 6 Ground Draconic Scales, 2 Air Elemental Essence
-Gem 4: Flawless Dusty Shielding Jewel (15% Body)
-	1 Kath Gem, 41 Ground Draconic Scales, 9 Undead Ash and Holy Water
+1. (Stat) Charisma: +28 [(Perfect) Icy Essence Jewel]
+2. (Skill) Parry: +4 [(Flawed) Vapor Battle Jewel]
+3. (Stat) Quickness: +25 [(Flawless) Airy Essence Jewel]
+4. (Resist) Crush: +3% [(Rough) Fiery Shielding Jewel]
+5. (Stat) Constitution: +15 []
 
-Arms:
-Imbue: 37.5/32 (Quality: 100)
-Gem 1: Flawed Light Shielding Jewel (5% Energy)
-	1 Ee Gem, 16 Ground Draconic Scales, 4 Sun Light
-Gem 2: Flawless Vapor Essence Jewel (25 Dexterity)
-	1 Kath Gem, 33 Essence of Life, 9 Swamp Fog
-Gem 3: Flawless Watery Essence Jewel (25 Piety)
-	1 Kath Gem, 33 Essence of Life, 9 Leviathan Blood
-Gem 4: Polished Heated Shielding Jewel (9% Heat)
-	1 Mon Gem, 26 Ground Draconic Scales, 6 Heat From an Unearthly Pyre
+Hands +15 dex Dragonsworn Bound Starkakedja
+Imbue Points: 37,5 of 37,5
+1. (Resist) Slash: +9% [(Polished) Watery Shielding Jewel]
+2. (Resist) Thrust: +9% [(Polished) Airy Shielding Jewel]
+3. (Resist) Cold: +7% [(Imperfect) Icy Shielding Jewel]
+4. (Skill) Parry: +4 [(Flawed) Vapor Battle Jewel]
 
-Head:
-Imbue: 37.5/32 (Quality: 100)
-Gem 1: Precious Watery Essence Jewel (22 Piety)
-	1 Zo Gem, 29 Essence of Life, 8 Leviathan Blood
-Gem 2: Polished Earthen Shielding Jewel (9% Matter)
-	1 Mon Gem, 26 Ground Draconic Scales, 6 Treant Blood
-Gem 3: Imperfect Icy Shielding Jewel (7% Cold)
-	1 Pal Gem, 21 Ground Draconic Scales, 5 Frost From a Wasteland
-Gem 4: Polished Vapor Shielding Jewel (9% Spirit)
-	1 Mon Gem, 26 Ground Draconic Scales, 6 Swamp Fog
+
+Feet Dragonsworn Scribed Starkakedja
+Imbue Points: 37,5 of 37,5
+1. (Resist) Spirit: +13% [(Precious) Vapor Shielding Jewel]
+2. (Resist) Crush: +7% [(Imperfect) Fiery Shielding Jewel]
+3. (Stat) Hit Points: +60 [(Precious) Blood Essence Jewel]
