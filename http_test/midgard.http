@@ -1,4 +1,4 @@
-POST {{baseUrl}}bar?realm=MIDGARD&user=Simon&character=Raiva
+POST {{baseUrl}}bar?realm=MIDGARD&user=Simon&character=Pisellara
 Content-Type: text/plain
 Accept: application/json
 
