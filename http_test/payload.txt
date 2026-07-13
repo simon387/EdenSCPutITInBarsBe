@@ -1,49 +1,19 @@
-HANDS
-Name: Dragonsworn Bound Starkakedja
-Level: 51 (99% Quality)
-Utility: 67.3
-Source Type: Spellcrafted
 
-1. (Stat) Strength: +25 (Flawless Fiery Essence Jewel)
-2. (Resist) Slash Resist: +11% (Faceted Watery Shielding Jewel)
-3. (Resist) Energy Resist: +3% (Rough Light Shielding Jewel)
-4. (Stat) Piety: +19 (Faceted Watery Essence Jewel)
-5. (5th Slot) +15 Dex: +15
+Flawed Vapor Battle Jewel (Parry: 4)
+	Ee Gem: 1, Bloodied Battlefield Dirt: 13, Swamp Fog: 4
+Polished Light Shielding Jewel (Energy: 9%)
+	Mon Gem: 1, Ground Draconic Scales: 26, Sun Light: 6
+Polished Vapor Shielding Jewel (Spirit: 9%)
+	Mon Gem: 1, Ground Draconic Scales: 26, Swamp Fog: 6
+Imperfect Dusty Shielding Jewel (Body: 7%)
+	Pal Gem: 1, Ground Draconic Scales: 21, Undead Ash and Holy Water: 5
 
-
-ARMS
-Name: Dragonsworn Bound Starkakedja
-Level: 51 (99% Quality)
-Utility: 75.0
-Source Type: Spellcrafted
-
-1. (Resist) Spirit Resist: +9% (Polished Vapor Shielding Jewel)
-2. (Resist) Thrust Resist: +9% (Polished Airy Shielding Jewel)
-3. (Hits) Hits: +60 (Precious Blood Essence Jewel)
-4. (Resist) Matter Resist: +7% (Imperfect Earthen Shielding Jewel)
-5. (5th Slot) +40 Hits: +40
-
-FEET
-Name: Rune Scribed Starkakedja
-Level: 51 (99% Quality)
-Utility: 66.7
-Source Type: Spellcrafted
-
-1. (Stat) Strength: +22 (Precious Fiery Essence Jewel)
-2. (Stat) Quickness: +25 (Flawless Airy Essence Jewel)
-3. (Stat) Dexterity: +25 (Flawless Vapor Essence Jewel)
-4. (Stat) Piety: +13 (Imperfect Watery Essence Jewel)
-5. (5th Slot) +5 Acu Cap: +5
-
-LEGS
-Name: Dragonsworn Bound Starkakedja
-Level: 51 (99% Quality)
-Utility: 69.3
-Source Type: Spellcrafted
-
-1. (Resist) Crush Resist: +9% (Polished Fiery Shielding Jewel)
-2. (Stat) Dexterity: +19 (Faceted Vapor Essence Jewel)
-3. (Stat) Quickness: +28 (Perfect Airy Essence Jewel)
-4. (Resist) Matter Resist: +5% (Flawed Earthen Shielding Jewel)
-5. (5th Slot) +15 Str: +15
-
+Hands
+Flawed Heated Shielding Jewel (Heat: 5%)
+	Ee Gem: 1, Ground Draconic Scales: 16, Heat From an Unearthly Pyre: 4
+Perfect Airy Essence Jewel (Quickness: 29)
+	Ra Gem: 1, Essence of Life: 37, Air Elemental Essence: 10
+Rough Vapor Battle Jewel (Parry: 3)
+	On Gem: 1, Bloodied Battlefield Dirt: 9, Swamp Fog: 3
+Perfect Icy Essence Jewel (Charisma: 29)
+	Ra Gem: 1, Essence of Life: 37, Frost From a Wasteland: 10
