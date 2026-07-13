@@ -1,22 +1,49 @@
-LOKI Craft Report
-Hands
-Imbue: 35.5/32 (Quality: 99)
-Rough Heated Shielding Jewel (Heat: 3%)
-	On Gem: 1, Ground Draconic Scales: 11, Heat From an Unearthly Pyre: 3
-Rough Earthen Shielding Jewel (Matter: 3%)
-	On Gem: 1, Ground Draconic Scales: 11, Treant Blood: 3
-Flawless Airy Essence Jewel (Quickness: 26)
-	Kath Gem: 1, Essence of Life: 33, Air Elemental Essence: 9
-Precious Vapor Shielding Jewel (Spirit: 13%)
-	Zo Gem: 1, Ground Draconic Scales: 36, Swamp Fog: 8
+HANDS
+Name: Dragonsworn Bound Starkakedja
+Level: 51 (99% Quality)
+Utility: 67.3
+Source Type: Spellcrafted
 
-Feet
-Imbue: 35.5/32 (Quality: 99)
-Rough Vapor Shielding Jewel (Spirit: 3%)
-	On Gem: 1, Ground Draconic Scales: 11, Swamp Fog: 3
-Uncut Icy Shielding Jewel (Cold: 2%)
-	Um Gem: 1, Ground Draconic Scales: 6, Frost From a Wasteland: 2
-Flawless Airy Essence Jewel (Quickness: 26)
-	Kath Gem: 1, Essence of Life: 33, Air Elemental Essence: 9
-Polished Fiery Battle Jewel (Shield: 6)
-	Mon Gem: 1, Bloodied Battlefield Dirt: 21, Draconic Fire: 6
+1. (Stat) Strength: +25 (Flawless Fiery Essence Jewel)
+2. (Resist) Slash Resist: +11% (Faceted Watery Shielding Jewel)
+3. (Resist) Energy Resist: +3% (Rough Light Shielding Jewel)
+4. (Stat) Piety: +19 (Faceted Watery Essence Jewel)
+5. (5th Slot) +15 Dex: +15
+
+
+ARMS
+Name: Dragonsworn Bound Starkakedja
+Level: 51 (99% Quality)
+Utility: 75.0
+Source Type: Spellcrafted
+
+1. (Resist) Spirit Resist: +9% (Polished Vapor Shielding Jewel)
+2. (Resist) Thrust Resist: +9% (Polished Airy Shielding Jewel)
+3. (Hits) Hits: +60 (Precious Blood Essence Jewel)
+4. (Resist) Matter Resist: +7% (Imperfect Earthen Shielding Jewel)
+5. (5th Slot) +40 Hits: +40
+
+FEET
+Name: Rune Scribed Starkakedja
+Level: 51 (99% Quality)
+Utility: 66.7
+Source Type: Spellcrafted
+
+1. (Stat) Strength: +22 (Precious Fiery Essence Jewel)
+2. (Stat) Quickness: +25 (Flawless Airy Essence Jewel)
+3. (Stat) Dexterity: +25 (Flawless Vapor Essence Jewel)
+4. (Stat) Piety: +13 (Imperfect Watery Essence Jewel)
+5. (5th Slot) +5 Acu Cap: +5
+
+LEGS
+Name: Dragonsworn Bound Starkakedja
+Level: 51 (99% Quality)
+Utility: 69.3
+Source Type: Spellcrafted
+
+1. (Resist) Crush Resist: +9% (Polished Fiery Shielding Jewel)
+2. (Stat) Dexterity: +19 (Faceted Vapor Essence Jewel)
+3. (Stat) Quickness: +28 (Perfect Airy Essence Jewel)
+4. (Resist) Matter Resist: +5% (Flawed Earthen Shielding Jewel)
+5. (5th Slot) +15 Str: +15
+
