@@ -1,13 +1,22 @@
-1. (Skill) Stealth: +5 [(Imperfect) Airy Battle Jewel]
-2. (Resist) Thrust: +9% [(Polished) Airy Shielding Jewel]
-3. (Resist) Matter: +9% [(Polished) Earthen Shielding Jewel]
-4. (Resist) Slash: +2% [(Uncut) Watery Shielding Jewel]
+LOKI Craft Report
+Hands
+Imbue: 35.5/32 (Quality: 99)
+Rough Heated Shielding Jewel (Heat: 3%)
+	On Gem: 1, Ground Draconic Scales: 11, Heat From an Unearthly Pyre: 3
+Rough Earthen Shielding Jewel (Matter: 3%)
+	On Gem: 1, Ground Draconic Scales: 11, Treant Blood: 3
+Flawless Airy Essence Jewel (Quickness: 26)
+	Kath Gem: 1, Essence of Life: 33, Air Elemental Essence: 9
+Precious Vapor Shielding Jewel (Spirit: 13%)
+	Zo Gem: 1, Ground Draconic Scales: 36, Swamp Fog: 8
 
-
-Feet (+5 buffs?)
-Name: rune carved
-Imbue Points: 37 of 37,5
-1. (Skill) Stealth: +6 [(Polished) Airy Battle Jewel]
-2. (Resist) Spirit: +7% [(Imperfect) Vapor Shielding Jewel]
-3. (Resist) Heat: +5% [(Flawed) Heated Shielding Jewel]
-4. (Resist) Cold: +3% [(Rough) Icy Shielding Jewel]
+Feet
+Imbue: 35.5/32 (Quality: 99)
+Rough Vapor Shielding Jewel (Spirit: 3%)
+	On Gem: 1, Ground Draconic Scales: 11, Swamp Fog: 3
+Uncut Icy Shielding Jewel (Cold: 2%)
+	Um Gem: 1, Ground Draconic Scales: 6, Frost From a Wasteland: 2
+Flawless Airy Essence Jewel (Quickness: 26)
+	Kath Gem: 1, Essence of Life: 33, Air Elemental Essence: 9
+Polished Fiery Battle Jewel (Shield: 6)
+	Mon Gem: 1, Bloodied Battlefield Dirt: 21, Draconic Fire: 6
