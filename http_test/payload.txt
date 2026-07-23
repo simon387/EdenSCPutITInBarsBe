@@ -1,32 +1,33 @@
-HANDS
-Name: Dragonsworn Etched Starkaskodd
-1. (Resist) Cold Resist: +11% (Faceted Icy Shielding Jewel)
-2. (Resist) Energy Resist: +5% (Flawed Light Shielding Jewel)
-3. (Skill) Parry: +5 (Imperfect vapor battle jewel)
-4. (Stat) Quickness: +10 (Flawed Airy Essence Jewel)
+LOKI Craft Report
+Legs
+Imbue: 36.5/32 (Quality: 99)
+Flawed Vapor Battle Jewel (Parry: 4)
+	Ee Gem: 1, Bloodied Battlefield Dirt: 13, Swamp Fog: 4
+Perfect Vapor Essence Jewel (Dexterity: 28)
+	Ra Gem: 1, Essence of Life: 37, Swamp Fog: 10
+Perfect Airy Essence Jewel (Quickness: 28)
+	Ra Gem: 1, Essence of Life: 37, Air Elemental Essence: 10
+Raw Heated War Rune (Spear: 1)
+	Lo Gem: 1, Ground Giant Bone: 1, Heat From an Unearthly Pyre: 1
 
+Hands
+Imbue: 37.5/32 (Quality: 99)
+Polished Vapor Shielding Jewel (Spirit: 9%)
+	Mon Gem: 1, Ground Draconic Scales: 26, Swamp Fog: 6
+Polished Earthen Shielding Jewel (Matter: 9%)
+	Mon Gem: 1, Ground Draconic Scales: 26, Treant Blood: 6
+Imperfect Watery Shielding Jewel (Slash: 7%)
+	Pal Gem: 1, Ground Draconic Scales: 21, Leviathan Blood: 5
+Flawed Vapor Battle Jewel (Parry: 4)
+	Ee Gem: 1, Bloodied Battlefield Dirt: 13, Swamp Fog: 4
 
-ARMS
-Name: Dragonsworn Carved Starkaskodd
-1. (Resist) Thrust Resist: +9% (Polished Airy Shielding Jewel)
-2. (Resist) Energy Resist: +7% (Imperfect Light Shielding Jewel)
-3. (Stat) Constitution: +22 (Precious Earthen Essence Jewel)
-4. (Skill) Left Axe: +4 (Flawed Icy War Rune)
-
-
-FEET
-Name: Rune Struck Starkaskodd
-1. (Resist) Slash Resist: +7% (Imperfect Watery Shielding Jewel)
-2. (Resist) Spirit Resist: +7% (Imperfect Vapor Shielding Jewel)
-3. (Stat) Dexterity: +16 (Polished Vapor Essence Jewel)
-4. (Skill) Parry: +5 (Imperfect vapor battle jewel)
-
-
-
-RIGHT HAND
-Name: Pyroclasmic War Hammer
-
-
-1. (Stat) Strength: +19 (Faceted Fiery Essence Jewel)
-2. (Stat) Dexterity: +19 (Faceted Vapor Essence Jewel)
-3. (Resist) Body Resist: +13% (Precious Dusty Shielding Jewel)
+Feet
+Imbue: 37.0/32 (Quality: 99)
+Precious Fiery Essence Jewel (Strength: 22)
+	Zo Gem: 1, Essence of Life: 29, Draconic Fire: 8
+Polished Vapor Essence Jewel (Dexterity: 16)
+	Mon Gem: 1, Essence of Life: 21, Swamp Fog: 6
+Flawed Heated Shielding Jewel (Heat: 5%)
+	Ee Gem: 1, Ground Draconic Scales: 16, Heat From an Unearthly Pyre: 4
+Faceted Vapor Shielding Jewel (Spirit: 11%)
+	Ros Gem: 1, Ground Draconic Scales: 31, Swamp Fog: 7
